@@ -14,14 +14,15 @@
         "home":"Inicio",
 
         "sobre-mi-titulo":"Un poco sobre mí",
-        "sobre-mi-texto":"Pues un poco mi vida seria en español.....",
+        "sobre-mi-texto":"Durante 6 años en la industria, descubrí el poder de la tecnología para revolucionar procesos. Hoy, como Técnico Superior en DAW, combino mi conocimiento del mundo físico con mi experiencia en desarrollo web y móvil para digitalizar ideas que resuelven problemas reales.",
         "sobre-mi-boton-contacto":"Contacto",
 
+        "experiencia-titulo":"Experiencia",
         "experiencia1-titulo":"Desarrollo Web",
         "experiencia2-titulo":"Desarrollo Móvil",
         "experiencia3-titulo":"Formandome en...",
-        "experiencia1-texto":"texto en español",
-        "experiencia2-texto":"texto en español",
+        "experiencia1-texto":"Participé en el desarrollo de una plataforma web completamente funcional y responsive para una empresa externa, destinada al control de visitas y formaciones en distintas sedes. Trabajé en un equipo multidisciplinario utilizando metodologías ágiles (Scrum con sprints), gestionando tareas mediante Trello y utilizando Git/GitHub para el control de versiones. El frontend fue desarrollado con React - Vite y Bootstrap, mientras que el backend y la base de datos se implementaron con Supabase y PostgreSQL.",
+        "experiencia2-texto":"Desarrollé de manera independiente una aplicación móvil personalizada para un aficionado al cine, con funcionalidades clave como búsqueda intuitiva de próximos estrenos, películas populares y favoritas. Llevé a cabo todo el ciclo de desarrollo en solitario: desde el análisis de requerimientos hasta el despliegue final, implementando la base de datos Isar, el frontend adaptativo y la integración con APIs externas. Mediante un proceso continuo de feedback con el cliente a través de reuniones periódicas, ajusté la aplicación a sus necesidades específicas, y hasta hoy sigo encargándome de su mantenimiento y mejora continua.",
         "experiencia3-texto":"texto en español",
 
         "proyectos-titulo":"Mis proyectos",
@@ -70,14 +71,15 @@
         "home":"Home",
 
         "sobre-mi-titulo":"A little about me",
-        "sobre-mi-texto":"Pues un poco mi vida seria en English.....",
+        "sobre-mi-texto":"During my 6 years in the industry, I discovered the power of technology to revolutionize processes. Today, as a DAW Technician, I combine my knowledge of the physical world with my experience in web and mobile development to digitize ideas that solve real problems.",
         "sobre-mi-boton-contacto":"Contact",
 
+        "experiencia-titulo":"Experience",
         "experiencia1-titulo":"Web Development",
         "experiencia2-titulo":"Mobile Development",
         "experiencia3-titulo":"Training in...",
-        "experiencia1-texto":"Texto en inglés",
-        "experiencia2-texto":"Texto en inglés",
+        "experiencia1-texto":"I participated in the development of a fully functional and responsive web platform for an external company, designed to manage visits and training sessions at various locations. I worked on a multidisciplinary team using agile methodologies (Scrum with sprints), managing tasks through Trello and using Git/GitHub for version control. The frontend was developed with React - Vite and Bootstrap, while the backend and database were implemented with Supabase and PostgreSQL.",
+        "experiencia2-texto":"I independently developed a custom mobile app for a film enthusiast, with key features such as intuitive search for upcoming releases, popular movies, and favorites. I carried out the entire development cycle alone: from requirements analysis to final deployment, implementing the Isar database, the adaptive frontend, and integration with external APIs. Through continuous feedback from the client via regular meetings, I tailored the app to their specific needs, and I continue to maintain and continuously improve it to this day.",
         "experiencia3-texto":"Texto en inglés",
 
         "proyectos-titulo":"My projects",

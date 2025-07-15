@@ -1,0 +1,115 @@
+{
+    "es": {
+        "welcome": "[Portfolio profesional]",
+        "about": "Sobre mí",
+        "about-link":"Sobre mí",
+        "projects": "Proyectos",
+        "contact": "Contacto",
+        "skills": "Habilidades",
+        "experience": "Experiencia",
+        "training":"Formación",
+        "frase-cabecera":"Desarrollo software transformando ideas en líneas de código.",
+        "frase-cabecera2":"La magia ocurre entre llaves { }.",
+        "home":"Inicio",
+
+        "sobre-mi-titulo":"Un poco sobre mí",
+        "sobre-mi-texto":"Pues un poco mi vida seria en español.....",
+        "sobre-mi-boton-contacto":"Contacto",
+
+        "experiencia1-titulo":"Desarrollo Web",
+        "experiencia2-titulo":"Desarrollo Móvil",
+        "experiencia3-titulo":"Formandome en...",
+        "experiencia1-texto":"texto en español",
+        "experiencia2-texto":"texto en español",
+        "experiencia3-texto":"texto en español",
+
+        "proyectos-titulo":"Mis proyectos",
+        "proyectos-subtitulo":"Estos son algunos de los proyectos que he creado recientemente...",
+        "proyecto1":"Gestión de inventario",
+        "proyecto2":"Gestión de inventario",
+        "proyecto3":"Gestión de inventario",
+        "proyecto4":"Gestión de inventario",
+        "proyecto5":"Gestión de inventario",
+        "proyecto6":"Gestión de inventario",
+        "mas-proyectos":"Ver más proyectos",
+       
+        "formacion-titulo":"Formación",
+        "formacion-titulo-tarjeta":"Más significativas:",
+        "mas-formaciones":"Ver más formaciones",
+
+        "capturas-titulo":"Capturas de pantalla",
+        "capturas-subtitulo":"Algunas capturas de pantalla de mis proyectos y scrips, espero que os gusten...",
+
+        "contacto-titulo":"Trabajemos juntos",
+        "contacto-texto":"Contáctame para colaborar en proyectos de desarrollo de software. Transformo ideas en soluciones escalables, ya sea como freelance o para integrarme en proyectos empresariales complejos.",
+        "contacto-llamar":"Llamar",
+        "contacto-wa":"WhatsApp",
+        "contacto-correo":"Correo",
+
+        "footer-texto1":"Aprendo, creo y desarrollo todos los días.",
+        "footer-texto2":"Vamos a crear y desarrollar proyectos juntos.",
+
+        "derechos":"Creado por José Antonio Fernández Martín (2025)"
+
+       
+    },
+
+
+
+    "en": {
+        "welcome": "[Professional portfolio]",
+        "about": "About me",
+        "about-link":"About me",
+        "projects": "Projects",
+        "contact": "Contact",
+        "skills": "Skills",
+        "training":"Training",
+        "frase-cabecera":"I develop software by transforming ideas into lines of code.",
+        "frase-cabecera2":"The magic happens between keys { }.",
+        "home":"Home",
+
+        "sobre-mi-titulo":"A little about me",
+        "sobre-mi-texto":"Pues un poco mi vida seria en English.....",
+        "sobre-mi-boton-contacto":"Contact",
+
+        "experiencia1-titulo":"Web Development",
+        "experiencia2-titulo":"Mobile Development",
+        "experiencia3-titulo":"Training in...",
+        "experiencia1-texto":"Texto en inglés",
+        "experiencia2-texto":"Texto en inglés",
+        "experiencia3-texto":"Texto en inglés",
+
+        "proyectos-titulo":"My projects",
+        "proyectos-subtitulo":"These are some of the projects I have created recently...",
+        "proyecto1":"Inventory management",
+        "proyecto2":"Inventory management",
+        "proyecto3":"Inventory management",
+        "proyecto4":"Inventory management",
+        "proyecto5":"Inventory management",
+        "proyecto6":"Inventory management",
+        "mas-proyectos":"See more projects",
+
+        "formacion-titulo":"Training",
+        "formacion-titulo-tarjeta":"Most significant:",
+        "mas-formaciones":"See more trainings",
+
+        "capturas-titulo":"Screenshots",
+        "capturas-subtitulo":"Some screenshots of my projects and scripts, I hope you like them...",
+
+        "contacto-titulo":"Let's work together",
+        "contacto-texto":"Contact me to collaborate on software development projects. I transform ideas into scalable solutions, either as a freelancer or as part of complex business projects.",
+        "contacto-llamar":"Call",
+        "contacto-wa":"WhatsApp",
+        "contacto-correo":"Mail",
+
+        "footer-texto1":"I learn, create and develop every day.",
+        "footer-texto2":"Let's create and develop projects together.",
+
+        "derechos":"Created by José Antonio Fernández Martín (2025)"
+
+        
+        
+
+
+    }
+}

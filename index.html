@@ -104,6 +104,15 @@
               </a>
             </li>
             <li class="nav-item">
+              <a
+                class="nav-link active px-3 position-relative"
+                href="#experiencia"
+              >
+                <i class="bi bi-briefcase"></i>
+                <span id="experiencia-link" class="nav-link-text">Experiencia</span>
+              </a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link px-3 position-relative" href="#proyectos">
                 <i class="bi bi-file-earmark-zip"></i>
                 <span id="projects" class="nav-link-text">Proyectos</span>
@@ -363,7 +372,7 @@
     </section>
 
     <!--Experiencia-->
-    <section class="experiencia seccion-clara">
+    <section id="experiencia" class="experiencia seccion-clara">
       <h2 id="experiencia-titulo" class="seccion-titulo texto-negro">
         Experiencia
       </h2>
@@ -421,23 +430,80 @@
             </div>
           </div>
 
-          <!--Estudiante-->
+          <!--PLC / Scada / HMI-->
           <div class="columna col-12 col-md-4">
-            <i class="bi bi-laptop"></i>
+            <i class="fas fa-microchip"></i>
             <p id="experiencia3-titulo" class="experiencia-titulo">
-              Formandome en ...
+              PLC / Scada / HMI
             </p>
             <p id="experiencia3-texto">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laudantium, debitis nulla. Amet ullam, esse iure perspiciatis
-              mollitia blanditiis, eaque natus ut praesentium quas quod, a sit
-              vero assumenda facilis aperiam.
+              Con 6 años de experiencia en entornos industriales y procesos de producción, he complementado mi formación en desarrollo web y móvil con especialización en programación de PLC, SCADA y HMI. Este conocimiento integrado me permite diseñar soluciones tecnológicas que optimizan líneas de producción, combinando mi experiencia sectorial con mi pasión por la automatización industrial.
             </p>
             <div class="badges-contenedor">
-              <span class="badge text-bg-primary">Node.js</span>
-              <span class="badge text-bg-primary">Express.js</span>
-              <span class="badge text-bg-primary">MongoDB</span>
-              <span class="badge text-bg-primary">SQL</span>
+              <span class="badge text-bg-primary">PLC</span>
+              <span class="badge text-bg-primary">Siemens</span>
+              <span class="badge text-bg-primary">SCADA</span>
+              <span class="badge text-bg-primary">HMI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección CV y GitHub (recursos) -->
+    <section class="recursos seccion-clara">
+      <div class="container text-center">
+        <h2 id="recursos-titulo" class="seccion-titulo texto-negro">
+          Recursos Profesionales
+        </h2>
+        <p id="recursos-texto" class="seccion-texto mb-5">
+          Accede a mi currículum y perfil de GitHub para conocer más sobre mi
+          trabajo.
+        </p>
+
+        <div class="row justify-content-center">
+          <!-- Tarjeta del CV -->
+          <div class="col-12 col-md-6 col-lg-5 mb-4 mb-lg-0">
+            <div class="card recursos-card h-100 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="recursos-icono mb-3">
+                  <i class="fas fa-file-pdf fa-3x" style="color: #e74a3b"></i>
+                </div>
+                <h3 id="cv-titulo" class="card-title">Currículum Vitae</h3>
+                <p id="cv-texto" class="card-text">
+                  Descarga mi CV completo con toda mi experiencia, formación y
+                  habilidades.
+                </p>
+                <a
+                  href="docs/CURRICULUM VITAE.pdf"
+                  class="btn btn-outline-dark mt-3"
+                  download="CV_José_Antonio_Fernández.pdf"
+                >
+                  <i id="cv-boton" class="bi bi-download me-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tarjeta de GitHub -->
+          <div class="col-12 col-md-6 col-lg-5">
+            <div class="card recursos-card h-100 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="recursos-icono mb-3">
+                  <i class="fab fa-github fa-3x" style="color: #24292e"></i>
+                </div>
+                <h3 class="card-title">Perfil GitHub</h3>
+                <p id="github-texto" class="card-text">
+                  Explora mis proyectos, contribuciones y repositorios públicos.
+                </p>
+                <a
+                  href="https://github.com/JosanFM"
+                  class="btn btn-outline-dark mt-3"
+                  target="_blank"
+                >
+                  <i id="github-boton" class="bi bi-github me-2"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -634,10 +700,7 @@
         </div>
       </div>
       <button class="btn btn-azul">
-        <a
-          href="https://github.com/JoseAnFM/Gesti-n-de-inventario.git"
-          target="_blank"
-        >
+        <a href="https://github.com/JosanFM?tab=repositories" target="_blank">
           <span id="mas-proyectos" class="btn-text">Ver más proyectos</span>
           <span class="btn-icon">→</span>
         </a>
@@ -655,23 +718,39 @@
         </div>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">
-            An itemdasdadasdasdsadasdasdadadasdadasadsadaadsa
+            Técnico Superior en Desarrollo de Aplicaciones Web (DAW) (2023 -
+            2025)
           </li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
-          <li class="list-group-item">A third item</li>
-          <li class="list-group-item">A third item</li>
-          <li class="list-group-item">A third item</li>
-          <li class="list-group-item">A third item</li>
+          <li class="list-group-item">
+            Técnico Superior de Laboratorio Clínico y Biomédico (2016 - 2018)
+          </li>
+          <li class="list-group-item">Curso Desarrollador Python (2023).</li>
+          <li class="list-group-item">
+            Curso Desarrollador Java - Completando conocimientos impartidos en
+            DAW (2024).
+          </li>
+          <li class="list-group-item">
+            Curso Git: gestión de proyectos y trabajo en equipo con GitHub
+            (2024)
+          </li>
+          <li class="list-group-item">
+            Master en React: ReactJS, Hooks, MERN, NodeJS, JWT (2025).
+          </li>
+          <li class="list-group-item">
+            Curso Desarrollador Flutter/Dart (2025).
+          </li>
+          <li class="list-group-item">
+            Curso de introducción a la programación de PLC- automatización
+            industrial (2025).
+          </li>
         </ul>
       </div>
       <button class="btn btn-azul">
-        <a
-          href="https://github.com/JoseAnFM/Gesti-n-de-inventario.git"
-          target="_blank"
-        >
-          <span id="mas-formaciones" class="btn-text">Ver más formaciones</span>
-          <span class="btn-icon">→</span>
+        <a href="docs/CURRICULUM VITAE.pdf" download="CURRICULUM VITAE.pdf">
+          <span id="mas-formaciones" class="btn-text"
+            >Descargar CV para ver + formaciones</span
+          >
+          <span class="bi bi-box-arrow-down"></span>
         </a>
       </button>
     </section>

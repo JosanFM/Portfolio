@@ -4,6 +4,7 @@
         "welcome": "[Portfolio profesional]",
         "about": "Sobre mí",
         "about-link":"Sobre mí",
+        "experiencia-link":"Experiencia",
         "projects": "Proyectos",
         "contact": "Contacto",
         "skills": "Habilidades",
@@ -20,10 +21,19 @@
         "experiencia-titulo":"Experiencia",
         "experiencia1-titulo":"Desarrollo Web",
         "experiencia2-titulo":"Desarrollo Móvil",
-        "experiencia3-titulo":"Formandome en...",
+        "experiencia3-titulo":"Automatización Industrial",
         "experiencia1-texto":"Participé en el desarrollo de una plataforma web completamente funcional y responsive para una empresa externa, destinada al control de visitas y formaciones en distintas sedes. Trabajé en un equipo multidisciplinario utilizando metodologías ágiles (Scrum con sprints), gestionando tareas mediante Trello y utilizando Git/GitHub para el control de versiones. El frontend fue desarrollado con React - Vite y Bootstrap, mientras que el backend y la base de datos se implementaron con Supabase y PostgreSQL.",
         "experiencia2-texto":"Desarrollé de manera independiente una aplicación móvil personalizada para un aficionado al cine, con funcionalidades clave como búsqueda intuitiva de próximos estrenos, películas populares y favoritas. Llevé a cabo todo el ciclo de desarrollo en solitario: desde el análisis de requerimientos hasta el despliegue final, implementando la base de datos Isar, el frontend adaptativo y la integración con APIs externas. Mediante un proceso continuo de feedback con el cliente a través de reuniones periódicas, ajusté la aplicación a sus necesidades específicas, y hasta hoy sigo encargándome de su mantenimiento y mejora continua.",
-        "experiencia3-texto":"texto en español",
+        "experiencia3-texto":"Con 6 años de experiencia en entornos industriales y procesos de producción, he complementado mi formación en desarrollo web y móvil con especialización en programación de PLC, SCADA y HMI. Este conocimiento integrado me permite diseñar soluciones tecnológicas que optimizan líneas de producción, combinando mi experiencia sectorial con mi pasión por la automatización industrial.",
+
+        "recursos-titulo":"Recursos Profesionales",
+        "recursos-texto":"Accede a mi currículum y perfil de GitHub para conocer más sobre mi trabajo.",
+        "cv-titulo":"Currículum Vitae",
+        "cv-texto":"Descarga mi CV completo con toda mi experiencia, formación y habilidades.",
+        "cv-boton":"  Descargar CV",
+        "github-titulo":"Perfil de GitHub",
+        "github-texto": "Explora mis proyectos, contribuciones y repositorios públicos",
+        "github-boton":"   Visitar GitHub",
 
         "proyectos-titulo":"Mis proyectos",
         "proyectos-subtitulo":"Estos son algunos de los proyectos que he creado recientemente...",
@@ -37,7 +47,7 @@
        
         "formacion-titulo":"Formación",
         "formacion-titulo-tarjeta":"Más significativas:",
-        "mas-formaciones":"Ver más formaciones",
+        "mas-formaciones":"Descargar CV para ver + formaciones",
 
         "capturas-titulo":"Capturas de pantalla",
         "capturas-subtitulo":"Algunas capturas de pantalla de mis proyectos y scrips, espero que os gusten...",
@@ -62,6 +72,7 @@
         "welcome": "[Professional portfolio]",
         "about": "About me",
         "about-link":"About me",
+        "experiencia-link":"Experience",
         "projects": "Projects",
         "contact": "Contact",
         "skills": "Skills",
@@ -77,10 +88,20 @@
         "experiencia-titulo":"Experience",
         "experiencia1-titulo":"Web Development",
         "experiencia2-titulo":"Mobile Development",
-        "experiencia3-titulo":"Training in...",
+        "experiencia3-titulo":"Industrial Automation",
         "experiencia1-texto":"I participated in the development of a fully functional and responsive web platform for an external company, designed to manage visits and training sessions at various locations. I worked on a multidisciplinary team using agile methodologies (Scrum with sprints), managing tasks through Trello and using Git/GitHub for version control. The frontend was developed with React - Vite and Bootstrap, while the backend and database were implemented with Supabase and PostgreSQL.",
         "experiencia2-texto":"I independently developed a custom mobile app for a film enthusiast, with key features such as intuitive search for upcoming releases, popular movies, and favorites. I carried out the entire development cycle alone: from requirements analysis to final deployment, implementing the Isar database, the adaptive frontend, and integration with external APIs. Through continuous feedback from the client via regular meetings, I tailored the app to their specific needs, and I continue to maintain and continuously improve it to this day.",
-        "experiencia3-texto":"Texto en inglés",
+        "experiencia3-texto":"With 6 years of experience in industrial environments and production processes, I have complemented my training in web and mobile development with specialization in PLC, SCADA, and HMI programming. This integrated knowledge allows me to design technological solutions that optimize production lines, combining my industry experience with my passion for industrial automation.",
+
+        "recursos-titulo":"Professional Resources",
+        "recursos-texto":"Access my CV and GitHub profile to learn more about my work.",
+        "cv-titulo":"Curriculum Vitae",
+        "cv-texto":"Download my complete CV with all my experience, training, and skills.",
+        "cv-boton":"   Download CV",
+        "github-titulo":"GitHub Profile",        
+        "github-texto": "Explore my projects, contributions, and public repositories",
+        "github-boton":"   Visit GitHub",
+
 
         "proyectos-titulo":"My projects",
         "proyectos-subtitulo":"These are some of the projects I have created recently...",
@@ -94,7 +115,7 @@
 
         "formacion-titulo":"Training",
         "formacion-titulo-tarjeta":"Most significant:",
-        "mas-formaciones":"See more trainings",
+        "mas-formaciones":"Download CV to see + training courses",
 
         "capturas-titulo":"Screenshots",
         "capturas-subtitulo":"Some screenshots of my projects and scripts, I hope you like them...",

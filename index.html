@@ -1,1045 +1,908 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <!--Metadatos-->
-    <meta charset="UTF-8" />
-    <meta name="author" content="José Antonio Fernández" />
-    <meta
-      name="description"
-      content="Portafolio de Desarrollo Web de José Antonio Fernández"
-    />
-    <meta name="keywords" content="HTML, CSS, JavaScript, React" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>José A. | Desarrollo de Software</title>
+<head>
+  <!--Metadatos-->
+  <meta charset="UTF-8" />
+  <meta name="author" content="José Antonio Fernández" />
+  <meta name="description" content="Portafolio de Desarrollo Web de José Antonio Fernández" />
+  <meta name="keywords" content="HTML, CSS, JavaScript, React" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!--Favicon (icono de la pestaña)-->
-    <link rel="icon" type="image/x-icon" href="imagenes/favicon.png" />
-    <!--CSS-->
-    <link rel="stylesheet" href="styles.css" />
+  <title>José A. | Desarrollo de Software</title>
 
-    <!--Google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Dirt&display=swap"
-      rel="stylesheet"
-    />
+  <!--Favicon (icono de la pestaña)-->
+  <link rel="icon" type="image/x-icon" href="imagenes/favicon.png" />
+  <!--CSS-->
+  <link rel="stylesheet" href="styles.css" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
+  <!--Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Dirt&display=swap"
+    rel="stylesheet" />
 
-    <!--Bootstrap-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
 
-    <!-- Font Awesome para iconos -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <!--devicons para iconos-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
-    />
-  </head>
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
+  <!-- Lightbox2 CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
-  <body
-    data-bs-spy="scroll"
-    data-bs-target="#navbarContent"
-    data-bs-offset="100"
-    tabindex="0"
-  >
-    <!--Barra de navegacion-->
-    <nav
-      class="navbar navbar-expand-md navbar-dark bg-primary fixed-top shadow-sm"
-    >
-      <div class="container">
-        <!-- Logo/Brand -->
-        <a class="navbar-brand d-flex align-items-center" href="#">
-          <img
-            src="imagenes/favicon-cabecera.png"
-            alt="Logo"
-            width="40"
-            height="40"
-            class="d-inline-block align-top me-2"
-          />
-          <span id="home" class="fw-bold">Home</span>
-        </a>
+  <!-- Font Awesome para iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!--devicons para iconos-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+</head>
 
-        <!-- Botón Hamburguesa -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarContent"
-          aria-controls="navbarContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<body data-bs-spy="scroll" data-bs-target="#navbarContent" data-bs-offset="100" tabindex="0">
+  <!--Barra de navegacion-->
+  <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top shadow-sm">
+    <div class="container">
+      <!-- Logo/Brand -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="imagenes/favicon-cabecera.png" alt="Logo" width="40" height="40"
+          class="d-inline-block align-top me-2" />
+        <span id="home" class="fw-bold">Home</span>
+      </a>
 
-        <!-- Contenido del Navbar -->
-        <div class="collapse navbar-collapse" id="navbarContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a
-                class="nav-link active px-3 position-relative"
-                href="#sobre-mi"
-              >
-                <i class="bi bi-file-earmark-person"></i>
-                <span id="about-link" class="nav-link-text">Sobre mí</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active px-3 position-relative"
-                href="#experiencia"
-              >
-                <i class="bi bi-briefcase"></i>
-                <span id="experiencia-link" class="nav-link-text"
-                  >Experiencia</span
-                >
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link px-3 position-relative" href="#proyectos">
-                <i class="bi bi-file-earmark-zip"></i>
-                <span id="projects" class="nav-link-text">Proyectos</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link px-3 position-relative" href="#formaciones">
-                <i class="fa-solid fa-school"></i>
-                <span id="training" class="nav-link-text">Formacion</span>
-              </a>
-            </li>
+      <!-- Botón Hamburguesa -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <li class="nav-item">
-              <a class="nav-link px-3 position-relative" href="#contacto">
-                <i class="bi bi-person-lines-fill"></i>
-                <span id="contact" class="nav-link-text">Contacto</span>
-              </a>
-            </li>
-            <button id="languageToggle" class="btn btn-primary">English</button>
-          </ul>
-        </div>
+      <!-- Contenido del Navbar -->
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active px-3 position-relative" href="#sobre-mi">
+              <i class="bi bi-file-earmark-person"></i>
+              <span id="about-link" class="nav-link-text">Sobre mí</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active px-3 position-relative" href="#experiencia">
+              <i class="bi bi-briefcase"></i>
+              <span id="experiencia-link" class="nav-link-text">Experiencia</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3 position-relative" href="#proyectos">
+              <i class="bi bi-file-earmark-zip"></i>
+              <span id="projects" class="nav-link-text">Proyectos</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3 position-relative" href="#formaciones">
+              <i class="fa-solid fa-school"></i>
+              <span id="training" class="nav-link-text">Formacion</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link px-3 position-relative" href="#contacto">
+              <i class="bi bi-person-lines-fill"></i>
+              <span id="contact" class="nav-link-text">Contacto</span>
+            </a>
+          </li>
+          <button id="languageToggle" class="btn btn-primary">English</button>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- Seccion Hero -->
-    <section class="hero align-items-stretch">
-      <div
-        class="hero-principal d-flex flex-column justify-content-center align-items-center"
-      >
-        <img
-          class="hero-foto-personal"
-          src="imagenes/foto_perfil_madrid.png"
-          alt="Foto de Jane Doe"
-        />
-        <h1 id="welcome" class="section-title texto-negro">
-          <b>[</b> Bienvenido a mi portafolio <b>]</b>
-        </h1>
-        <h2 id="frase-cabecera">
-          Desarrollo Software transformando ideas en líneas de código.
-        </h2>
-        <h2 id="frase-cabecera2">La magia ocurre entre <b>{ }</b>.</h2>
-      </div>
-
-      <!-- Hard Skills -->
-      <div class="container py-4">
-        <div class="row justify-content-center">
-          <div class="col-12 text-center">
-            <h1 id="skills" class="section-title texto-negro">
-              Technical Skills
-            </h1>
-          </div>
-        </div>
-
-        <div class="row justify-content-center">
-          <!-- Java -->
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="skill-card text-center">
-              <div class="skill-icon java-icon">
-                <i class="fab fa-java colored"></i>
-              </div>
-              <h5 class="card-title">Java</h5>
-            </div>
-          </div>
-
-          <!-- Dart -->
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="skill-card text-center">
-              <div class="skill-icon dart-icon">
-                <i class="devicon-dart-plain colored"></i>
-              </div>
-              <h5 class="card-title">Dart</h5>
-            </div>
-          </div>
-
-          <!-- Flutter -->
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="skill-card text-center">
-              <div class="skill-icon flutter-icon">
-                <i class="devicon-flutter-plain colored"></i>
-              </div>
-              <h5 class="card-title">Flutter</h5>
-            </div>
-          </div>
-
-          <!-- Python -->
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="skill-card text-center">
-              <div class="skill-icon python-icon">
-                <i class="fab fa-python colored"></i>
-              </div>
-              <h5 class="card-title">Python</h5>
-            </div>
-          </div>
-
-          <!-- Docker -->
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="skill-card text-center">
-              <div class="skill-icon docker-icon">
-                <i class="fab fa-docker colored"></i>
-              </div>
-              <h5 class="card-title">Docker</h5>
-            </div>
-          </div>
-
-          <!-- PostgreSQL - Supabase -->
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="skill-card text-center">
-              <div class="skill-icon db-icon">
-                <i class="fas fa-database colored"></i>
-              </div>
-              <h5 class="card-title">PostgreSQL / Supabase</h5>
-            </div>
-          </div>
-
-          <!-- HTML y CSS -->
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="skill-card text-center">
-              <div class="skill-icon">
-                <i class="fab fa-html5 colored" , style="color: #e34f26"></i>
-                <i class="fab fa-css3-alt colored css-icon"></i>
-              </div>
-              <h5 class="card-title">HTML5 + CSS</h5>
-            </div>
-          </div>
-
-          <!-- JavaScript -->
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="skill-card text-center">
-              <div class="skill-icon js-icon">
-                <i class="fab fa-js colored"></i>
-              </div>
-              <h5 class="card-title">JavaScript</h5>
-            </div>
-          </div>
-
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="skill-card text-center">
-              <div class="skill-icon react-icon">
-                <i class="fab fa-react colored"></i>
-              </div>
-              <h5 class="card-title">React</h5>
-            </div>
-          </div>
-
-          <!-- Bootstrap -->
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="skill-card text-center">
-              <div class="skill-icon bootstrap-icon">
-                <i class="fab fa-bootstrap colored"></i>
-              </div>
-              <h5 class="card-title">Bootstrap</h5>
-            </div>
-          </div>
-
-          <!-- React -->
-        </div>
-      </div>
-
-      <!-- Soft Skills -->
-      <div class="container py-4">
-        <div class="row justify-content-center">
-          <div class="col-12 text-center">
-            <h1 class="section-title texto-negro">Soft Skills</h1>
-          </div>
-        </div>
-
-        <div class="row justify-content-center">
-          <!-- Comunicación -->
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="skill-card text-center">
-              <div class="skill-icon soft-icon">
-                <i class="fas fa-comments colored" style="color: #4e73df"></i>
-              </div>
-              <h5 class="card-title">Comunicación</h5>
-            </div>
-          </div>
-
-          <!-- Trabajo en equipo -->
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="skill-card text-center">
-              <div class="skill-icon soft-icon">
-                <i class="fas fa-users colored" style="color: #1cc88a"></i>
-              </div>
-              <h5 class="card-title">Trabajo en equipo</h5>
-            </div>
-          </div>
-
-          <!-- Gestión de presión y objetivos -->
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="skill-card text-center">
-              <div class="skill-icon soft-icon">
-                <i class="fas fa-bullseye colored" style="color: #e83e8c"></i>
-              </div>
-              <h5 class="card-title">Trabajo bajo presión</h5>
-            </div>
-          </div>
-
-          <!-- Resolución de problemas -->
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="skill-card text-center">
-              <div class="skill-icon soft-icon">
-                <i class="fas fa-lightbulb colored" style="color: #f6c23e"></i>
-              </div>
-              <h5 class="card-title">Resolución de problemas</h5>
-            </div>
-          </div>
-
-          <!-- Adaptabilidad -->
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="skill-card text-center">
-              <div class="skill-icon soft-icon">
-                <i class="fas fa-sync-alt colored" style="color: #e74a3b"></i>
-              </div>
-              <h5 class="card-title">Adaptabilidad</h5>
-            </div>
-          </div>
-
-          <!-- Gestión del tiempo -->
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="skill-card text-center">
-              <div class="skill-icon soft-icon">
-                <i class="fas fa-clock colored" style="color: #36b9cc"></i>
-              </div>
-              <h5 class="card-title">Gestión del tiempo</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="hero-inferior">
-        <img
-          class="hero-inferior-imagen img-fluid"
-          src="imagenes/hero-inferior.svg"
-          alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React."
-        />
-      </div>
-    </section>
-
-    <!--Sobre mi-->
-    <section id="sobre-mi" class="sobre-mi seccion-oscura">
-      <div class="contenedor">
-        <h2 id="sobre-mi-titulo" class="seccion-titulo">Un poco sobre mí</h2>
-        <p id="sobre-mi-texto" class="seccion-texto">
-          Durante 6 años en la industria, descubrí el poder de la tecnología
-          para revolucionar procesos. Hoy, como Técnico Superior en DAW, combino
-          mi conocimiento del mundo físico con mi experiencia en desarrollo web
-          y móvil para digitalizar ideas que resuelven problemas reales.
-        </p>
-
-        <button class="btn btn-azul">
-          <a href="#contacto">
-            <span id="sobre-mi-boton-contacto" class="btn-text">Contacto</span>
-            <span class="btn-icon">→</span>
-          </a>
-        </button>
-      </div>
-    </section>
-
-    <!--Experiencia-->
-    <section id="experiencia" class="experiencia seccion-clara">
-      <h2 id="experiencia-titulo" class="seccion-titulo texto-negro">
-        Experiencia
+  <!-- Seccion Hero -->
+  <section class="hero align-items-stretch">
+    <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+      <img class="hero-foto-personal" src="imagenes/foto_perfil_madrid.png" alt="Foto de Jane Doe" />
+      <h1 id="welcome" class="section-title texto-negro">
+        <b>[</b> Bienvenido a mi portafolio <b>]</b>
+      </h1>
+      <h2 id="frase-cabecera">
+        Desarrollo Software transformando ideas en líneas de código.
       </h2>
-      <div class="container text-center">
-        <div class="row">
-          <!--Desarrollo Web-->
-          <div class="columna col-12 col-md-4">
-            <i class="bi bi-laptop"></i>
-            <p id="experiencia1-titulo" class="experiencia-titulo">
-              Desarrollo web
-            </p>
-            <p id="experiencia1-texto">
-              Participé en el desarrollo de una plataforma web completamente
-              funcional y responsive para una empresa externa, destinada al
-              control de visitas y formaciones en distintas sedes. Trabajé en un
-              equipo multidisciplinario utilizando metodologías ágiles (Scrum
-              con sprints), gestionando tareas mediante Trello y utilizando
-              Git/GitHub para el control de versiones. El frontend fue
-              desarrollado con React, Vite y Bootstrap, mientras que el backend
-              y la base de datos se implementaron con Supabase y PostgreSQL.
-            </p>
-            <div class="badges-contenedor">
-              <span class="badge text-bg-primary">HTML</span>
-              <span class="badge text-bg-primary">CSS</span>
-              <span class="badge text-bg-primary">JavaScript</span>
-              <span class="badge text-bg-primary">React</span>
-              <span class="badge text-bg-primary">Supabase</span>
-            </div>
-          </div>
+      <h2 id="frase-cabecera2">La magia ocurre entre <b>{ }</b>.</h2>
+    </div>
 
-          <!--desarrollo móvil-->
-          <div class="columna col-12 col-md-4">
-            <i class="bi bi-phone"></i>
-            <!-- Icono básico -->
-            <p id="experiencia2-titulo" class="experiencia-titulo">
-              Desarrollo Móvil
-            </p>
-            <p id="experiencia2-texto">
-              Desarrollé de manera independiente una aplicación móvil
-              personalizada para un aficionado al cine, con funcionalidades
-              clave como búsqueda intuitiva de próximos estrenos, películas
-              populares y favoritas. Llevé a cabo todo el ciclo de desarrollo en
-              solitario: desde el análisis de requerimientos hasta el despliegue
-              final, implementando la base de datos Isar, el frontend adaptativo
-              y la integración con APIs externas. Mediante un proceso continuo
-              de feedback con el cliente a través de reuniones periódicas,
-              ajusté la aplicación a sus necesidades específicas, y hasta hoy
-              sigo encargándome de su mantenimiento y mejora continua.
-            </p>
-            <div class="badges-contenedor">
-              <span class="badge text-bg-primary">Flutter</span>
-              <span class="badge text-bg-primary">Dart</span>
-              <span class="badge text-bg-primary">Isar</span>
-              <span class="badge text-bg-primary">API</span>
-            </div>
-          </div>
+    <!-- Hard Skills -->
+    <div class="container py-4">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h1 id="skills" class="section-title texto-negro">
+            Technical Skills
+          </h1>
+        </div>
+      </div>
 
-          <!--PLC / Scada / HMI-->
-          <div class="columna col-12 col-md-4">
-            <i class="fas fa-microchip"></i>
-            <p id="experiencia3-titulo" class="experiencia-titulo">
-              PLC / Scada / HMI
-            </p>
-            <p id="experiencia3-texto">
-              Con 6 años de experiencia en entornos industriales y procesos de
-              producción, he complementado mi formación en desarrollo web y
-              móvil con especialización en programación de PLC, SCADA y HMI.
-              Este conocimiento integrado me permite diseñar soluciones
-              tecnológicas que optimizan líneas de producción, combinando mi
-              experiencia sectorial con mi pasión por la automatización
-              industrial.
-            </p>
-            <div class="badges-contenedor">
-              <span class="badge text-bg-primary">PLC</span>
-              <span class="badge text-bg-primary">Siemens</span>
-              <span class="badge text-bg-primary">SCADA</span>
-              <span class="badge text-bg-primary">HMI</span>
+      <div class="row justify-content-center">
+        <!-- Java -->
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="skill-card text-center">
+            <div class="skill-icon java-icon">
+              <i class="fab fa-java colored"></i>
             </div>
+            <h5 class="card-title">Java</h5>
+          </div>
+        </div>
+
+        <!-- Dart -->
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="skill-card text-center">
+            <div class="skill-icon dart-icon">
+              <i class="devicon-dart-plain colored"></i>
+            </div>
+            <h5 class="card-title">Dart</h5>
+          </div>
+        </div>
+
+        <!-- Flutter -->
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="skill-card text-center">
+            <div class="skill-icon flutter-icon">
+              <i class="devicon-flutter-plain colored"></i>
+            </div>
+            <h5 class="card-title">Flutter</h5>
+          </div>
+        </div>
+
+        <!-- Python -->
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="skill-card text-center">
+            <div class="skill-icon python-icon">
+              <i class="fab fa-python colored"></i>
+            </div>
+            <h5 class="card-title">Python</h5>
+          </div>
+        </div>
+
+        <!-- Docker -->
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="skill-card text-center">
+            <div class="skill-icon docker-icon">
+              <i class="fab fa-docker colored"></i>
+            </div>
+            <h5 class="card-title">Docker</h5>
+          </div>
+        </div>
+
+        <!-- PostgreSQL - Supabase -->
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="skill-card text-center">
+            <div class="skill-icon db-icon">
+              <i class="fas fa-database colored"></i>
+            </div>
+            <h5 class="card-title">PostgreSQL / Supabase</h5>
+          </div>
+        </div>
+
+        <!-- HTML y CSS -->
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="skill-card text-center">
+            <div class="skill-icon">
+              <i class="fab fa-html5 colored" , style="color: #e34f26"></i>
+              <i class="fab fa-css3-alt colored css-icon"></i>
+            </div>
+            <h5 class="card-title">HTML5 + CSS</h5>
+          </div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="skill-card text-center">
+            <div class="skill-icon js-icon">
+              <i class="fab fa-js colored"></i>
+            </div>
+            <h5 class="card-title">JavaScript</h5>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="skill-card text-center">
+            <div class="skill-icon react-icon">
+              <i class="fab fa-react colored"></i>
+            </div>
+            <h5 class="card-title">React</h5>
+          </div>
+        </div>
+
+        <!-- Bootstrap -->
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="skill-card text-center">
+            <div class="skill-icon bootstrap-icon">
+              <i class="fab fa-bootstrap colored"></i>
+            </div>
+            <h5 class="card-title">Bootstrap</h5>
+          </div>
+        </div>
+
+        <!-- React -->
+      </div>
+    </div>
+
+    <!-- Soft Skills -->
+    <div class="container py-4">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h1 class="section-title texto-negro">Soft Skills</h1>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <!-- Comunicación -->
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="skill-card text-center">
+            <div class="skill-icon soft-icon">
+              <i class="fas fa-comments colored" style="color: #4e73df"></i>
+            </div>
+            <h5 class="card-title">Comunicación</h5>
+          </div>
+        </div>
+
+        <!-- Trabajo en equipo -->
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="skill-card text-center">
+            <div class="skill-icon soft-icon">
+              <i class="fas fa-users colored" style="color: #1cc88a"></i>
+            </div>
+            <h5 class="card-title">Trabajo en equipo</h5>
+          </div>
+        </div>
+
+        <!-- Gestión de presión y objetivos -->
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="skill-card text-center">
+            <div class="skill-icon soft-icon">
+              <i class="fas fa-bullseye colored" style="color: #e83e8c"></i>
+            </div>
+            <h5 class="card-title">Trabajo bajo presión</h5>
+          </div>
+        </div>
+
+        <!-- Resolución de problemas -->
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="skill-card text-center">
+            <div class="skill-icon soft-icon">
+              <i class="fas fa-lightbulb colored" style="color: #f6c23e"></i>
+            </div>
+            <h5 class="card-title">Resolución de problemas</h5>
+          </div>
+        </div>
+
+        <!-- Adaptabilidad -->
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="skill-card text-center">
+            <div class="skill-icon soft-icon">
+              <i class="fas fa-sync-alt colored" style="color: #e74a3b"></i>
+            </div>
+            <h5 class="card-title">Adaptabilidad</h5>
+          </div>
+        </div>
+
+        <!-- Gestión del tiempo -->
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="skill-card text-center">
+            <div class="skill-icon soft-icon">
+              <i class="fas fa-clock colored" style="color: #36b9cc"></i>
+            </div>
+            <h5 class="card-title">Gestión del tiempo</h5>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- Sección CV y GitHub (recursos) -->
-    <section class="recursos seccion-clara">
-      <div class="container text-center">
-        <h2 id="recursos-titulo" class="seccion-titulo texto-negro">
-          Recursos Profesionales
-        </h2>
-        <p id="recursos-texto" class="seccion-texto mb-5">
-          Accede a mi currículum y perfil de GitHub para conocer más sobre mi
-          trabajo.
-        </p>
+    <div class="hero-inferior">
+      <img class="hero-inferior-imagen img-fluid" src="imagenes/hero-inferior.svg"
+        alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React." />
+    </div>
+  </section>
 
-        <div class="row justify-content-center">
-          <!-- Tarjeta del CV -->
-          <div class="col-12 col-md-6 col-lg-5 mb-4 mb-lg-0">
-            <div class="card recursos-card h-100 shadow-sm">
-              <div class="card-body text-center p-4">
-                <div class="recursos-icono mb-3">
-                  <i class="fas fa-file-pdf fa-3x" style="color: #e74a3b"></i>
-                </div>
-                <h3 id="cv-titulo" class="card-title">Currículum Vitae</h3>
-                <p id="cv-texto" class="card-text">
-                  Descarga mi CV completo con toda mi experiencia, formación y
-                  habilidades.
-                </p>
-                <a
-                  href="docs/CURRICULUM VITAE.pdf"
-                  class="btn btn-outline-dark mt-3"
-                  download="CV_José_Antonio_Fernández.pdf"
-                  id="descargar-cv"
-                >
-                  <i id="cv-icono" class="bi bi-download me-2"></i>
-                  <span id="cv-texto-boton">Descargar CV</span>
-                </a>
-                
-              </div>
-            </div>
-          </div>
+  <!--Sobre mi-->
+  <section id="sobre-mi" class="sobre-mi seccion-oscura">
+    <div class="contenedor">
+      <h2 id="sobre-mi-titulo" class="seccion-titulo">Un poco sobre mí</h2>
+      <p id="sobre-mi-texto" class="seccion-texto">
+        Durante 6 años en la industria, descubrí el poder de la tecnología
+        para revolucionar procesos. Hoy, como Técnico Superior en DAW, combino
+        mi conocimiento del mundo físico con mi experiencia en desarrollo web
+        y móvil para digitalizar ideas que resuelven problemas reales.
+      </p>
 
-          <!-- Tarjeta de GitHub -->
-          <div class="col-12 col-md-6 col-lg-5">
-            <div class="card recursos-card h-100 shadow-sm">
-              <div class="card-body text-center p-4">
-                <div class="recursos-icono mb-3">
-                  <i class="fab fa-github fa-3x" style="color: #24292e"></i>
-                </div>
-                <h3 class="card-title">Perfil GitHub</h3>
-                <p id="github-texto" class="card-text">
-                  Explora mis proyectos, contribuciones y repositorios públicos.
-                </p>
-                <a
-                  href="https://github.com/JosanFM"
-                  class="btn btn-outline-dark mt-3"
-                  target="_blank"
-                >
-                  <i id="github-boton" class="bi bi-github me-2"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--Proyectos-->
-    <section
-      id="proyectos"
-      class="proyectos-recientes seccion-clara d-flex flex-column"
-    >
-      <h2 id="proyectos-titulo" class="seccion-titulo texto-negro">
-        Mis proyectos
-      </h2>
-      <h3 id="proyectos-subtitulo" class="seccion-descripcion">
-        Estos son algunos de los proyectos que he creado recientemente...
-      </h3>
-      <!--Galeria de los proyectos-->
-      <div class="container text-center proyectos-contenedor">
-        <div class="row">
-          <!--Proyecto 1-->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="proyecto">
-              <img
-                src="imagenes/login_gestion_de_sedes1.png"
-                alt="gestión de sedes"
-              />
-              <div class="overlay">
-                <p id="proyecto1">Gestión de sedes</p>
-                <div class="iconos-contenedor">
-                  <a
-                    href="https://gestion-visitas-y-formaciones.vercel.app"
-                    target="_blank"
-                    rel="nooener noreferrer"
-                  >
-                    <i class="bi bi-globe2"></i>
-                  </a>
-                  <a
-                    href="https://github.com/JosanFM/GestionVisitasyFormaciones"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i class="bi bi-github"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!--Proyecto 2-->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="proyecto">
-              <img
-                src="imagenes/home_filmora.png"
-                alt="Gestión de inventario + log in"
-                
-              />
-              <div class="overlay">
-                <p id="proyecto2">Filmora</p>
-                <div class="iconos-contenedor">
-                  <a
-                    href="https://www.freecodecamp.org/news/tag/espanol-2/"
-                    target="_blank"
-                    rel="nooener noreferrer"
-                  >
-                    <i class="bi bi-globe2"></i>
-                  </a>
-                  <a
-                    href="https://github.com/JosanFM/Filmora"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i class="bi bi-github"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!--Proyecto 3-->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="proyecto">
-              <img
-                src="imagenes/gestion_inventario1.png"
-                alt="Gestión de inventario + log in"
-              />
-              <div class="overlay">
-                <p id="proyecto3">Gestión de inventario</p>
-                <div class="iconos-contenedor">
-                  <a
-                    href="https://gestion-inventario-three.vercel.app/"
-                    target="_blank"
-                    rel="nooener noreferrer"
-                  >
-                    <i class="bi bi-globe2"></i>
-                  </a>
-                  <a
-                    href="https://github.com/JosanFM/Gestion_Inventario"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i class="bi bi-github"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!--Proyecto 4-->
-          
-        </div>
-      </div>
       <button class="btn btn-azul">
-        <a href="https://github.com/JosanFM?tab=repositories" target="_blank">
-          <span id="mas-proyectos" class="btn-text">Ver más proyectos</span>
+        <a href="#contacto">
+          <span id="sobre-mi-boton-contacto" class="btn-text">Contacto</span>
           <span class="btn-icon">→</span>
         </a>
       </button>
-    </section>
+    </div>
+  </section>
 
-    <!--Formaciones-->
-    <section id="formaciones" class="articulos justify-content-start">
-      <h2 id="formacion-titulo" class="seccion-titulo texto-negro">
-        Formación
-      </h2>
-      <div class="card">
-        <div id="formacion-titulo-tarjeta" class="card-header">
-          Más significativas:
+  <!--Experiencia-->
+  <section id="experiencia" class="experiencia seccion-clara">
+    <h2 id="experiencia-titulo" class="seccion-titulo texto-negro">
+      Experiencia
+    </h2>
+    <div class="container text-center">
+      <div class="row">
+        <!--Desarrollo Web-->
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-laptop"></i>
+          <p id="experiencia1-titulo" class="experiencia-titulo">
+            Desarrollo web
+          </p>
+          <p id="experiencia1-texto">
+            Participé en el desarrollo de una plataforma web completamente
+            funcional y responsive para una empresa externa, destinada al
+            control de visitas y formaciones en distintas sedes. Trabajé en un
+            equipo multidisciplinario utilizando metodologías ágiles (Scrum
+            con sprints), gestionando tareas mediante Trello y utilizando
+            Git/GitHub para el control de versiones. El frontend fue
+            desarrollado con React, Vite y Bootstrap, mientras que el backend
+            y la base de datos se implementaron con Supabase y PostgreSQL.
+          </p>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-primary">HTML</span>
+            <span class="badge text-bg-primary">CSS</span>
+            <span class="badge text-bg-primary">JavaScript</span>
+            <span class="badge text-bg-primary">React</span>
+            <span class="badge text-bg-primary">Supabase</span>
+          </div>
         </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">
-            Técnico Superior en Desarrollo de Aplicaciones Web (DAW) (2023 -
-            2025)
-          </li>
-          <li class="list-group-item">
-            Técnico Superior de Laboratorio Clínico y Biomédico (2016 - 2018)
-          </li>
-          <li class="list-group-item">Curso Desarrollador Python (2023).</li>
-          <li class="list-group-item">
-            Curso Desarrollador Java - Completando conocimientos impartidos en
-            DAW (2024).
-          </li>
-          <li class="list-group-item">
-            Curso Git: gestión de proyectos y trabajo en equipo con GitHub
-            (2024)
-          </li>
-          <li class="list-group-item">
-            Master en React: ReactJS, Hooks, MERN, NodeJS, JWT (2025).
-          </li>
-          <li class="list-group-item">
-            Curso Desarrollador Flutter/Dart (2025).
-          </li>
-          <li class="list-group-item">
-            Curso de introducción a la programación de PLC- automatización
-            industrial (2025).
-          </li>
-        </ul>
+
+        <!--desarrollo móvil-->
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-phone"></i>
+          <!-- Icono básico -->
+          <p id="experiencia2-titulo" class="experiencia-titulo">
+            Desarrollo Móvil
+          </p>
+          <p id="experiencia2-texto">
+            Desarrollé de manera independiente una aplicación móvil
+            personalizada para un aficionado al cine, con funcionalidades
+            clave como búsqueda intuitiva de próximos estrenos, películas
+            populares y favoritas. Llevé a cabo todo el ciclo de desarrollo en
+            solitario: desde el análisis de requerimientos hasta el despliegue
+            final, implementando la base de datos Isar, el frontend adaptativo
+            y la integración con APIs externas. Mediante un proceso continuo
+            de feedback con el cliente a través de reuniones periódicas,
+            ajusté la aplicación a sus necesidades específicas, y hasta hoy
+            sigo encargándome de su mantenimiento y mejora continua.
+          </p>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-primary">Flutter</span>
+            <span class="badge text-bg-primary">Dart</span>
+            <span class="badge text-bg-primary">Isar</span>
+            <span class="badge text-bg-primary">API</span>
+          </div>
+        </div>
+
+        <!--PLC / Scada / HMI-->
+        <div class="columna col-12 col-md-4">
+          <i class="fas fa-microchip"></i>
+          <p id="experiencia3-titulo" class="experiencia-titulo">
+            PLC / Scada / HMI
+          </p>
+          <p id="experiencia3-texto">
+            Con 6 años de experiencia en entornos industriales y procesos de
+            producción, he complementado mi formación en desarrollo web y
+            móvil con especialización en programación de PLC, SCADA y HMI.
+            Este conocimiento integrado me permite diseñar soluciones
+            tecnológicas que optimizan líneas de producción, combinando mi
+            experiencia sectorial con mi pasión por la automatización
+            industrial.
+          </p>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-primary">PLC</span>
+            <span class="badge text-bg-primary">Siemens</span>
+            <span class="badge text-bg-primary">SCADA</span>
+            <span class="badge text-bg-primary">HMI</span>
+          </div>
+        </div>
       </div>
-      <button class="btn btn-azul">
-        <a href="docs/CURRICULUM VITAE.pdf" download="CURRICULUM VITAE.pdf">
-          <span id="mas-formaciones" class="btn-text"
-            >Descargar CV para ver + formaciones</span
-          >
-          <span class="bi bi-box-arrow-down"></span>
-        </a>
-      </button>
-    </section>
+    </div>
+  </section>
 
-    <!--Screenshot-->
-    <section class="capturas texto-blanco">
-      <h2 id="capturas-titulo" class="seccion-titulo">Screenshots</h2>
-      <h3 id="capturas-subtitulo" class="seccion-descripcion texto-blanco">
-        Algunas capturas de pantalla de mis proyectos y scrips, espero que os
-        gusten...
-        <i class="bi bi-aspect-ratio"></i>
-      </h3>
+  <!-- Sección CV y GitHub (recursos) -->
+  <section class="recursos seccion-clara">
+    <div class="container text-center">
+      <h2 id="recursos-titulo" class="seccion-titulo texto-negro">
+        Recursos Profesionales
+      </h2>
+      <p id="recursos-texto" class="seccion-texto mb-5">
+        Accede a mi currículum y perfil de GitHub para conocer más sobre mi
+        trabajo.
+      </p>
 
-      <!--Carrusel-->
-      <div id="capturas-carrusel" class="carousel carousel-dark slide">
-        <div class="carousel-inner">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
+      <div class="row justify-content-center">
+        <!-- Tarjeta del CV -->
+        <div class="col-12 col-md-6 col-lg-5 mb-4 mb-lg-0">
+          <div class="card recursos-card h-100 shadow-sm">
+            <div class="card-body text-center p-4">
+              <div class="recursos-icono mb-3">
+                <i class="fas fa-file-pdf fa-3x" style="color: #e74a3b"></i>
+              </div>
+              <h3 id="cv-titulo" class="card-title">Currículum Vitae</h3>
+              <p id="cv-texto" class="card-text">
+                Descarga mi CV completo con toda mi experiencia, formación y
+                habilidades.
+              </p>
+              <a href="docs/CURRICULUM VITAE.pdf" class="btn btn-outline-dark mt-3"
+                download="CV_José_Antonio_Fernández.pdf" id="descargar-cv">
+                <i id="cv-icono" class="bi bi-download me-2"></i>
+                <span id="cv-texto-boton">Descargar CV</span>
+              </a>
+            </div>
+          </div>
         </div>
+
+        <!-- Tarjeta de GitHub -->
+        <div class="col-12 col-md-6 col-lg-5">
+          <div class="card recursos-card h-100 shadow-sm">
+            <div class="card-body text-center p-4">
+              <div class="recursos-icono mb-3">
+                <i class="fab fa-github fa-3x" style="color: #24292e"></i>
+              </div>
+              <h3 class="card-title">Perfil GitHub</h3>
+              <p id="github-texto" class="card-text">
+                Explora mis proyectos, contribuciones y repositorios públicos.
+              </p>
+              <a href="https://github.com/JosanFM" class="btn btn-outline-dark mt-3" target="_blank">
+                <i id="github-boton" class="bi bi-github me-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Proyectos-->
+  <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+    <h2 id="proyectos-titulo" class="seccion-titulo texto-negro">
+      Mis proyectos
+    </h2>
+    <h3 id="proyectos-subtitulo" class="seccion-descripcion">
+      Estos son algunos de los proyectos que he creado recientemente...
+    </h3>
+    <!--Galeria de los proyectos-->
+    <div class="container text-center proyectos-contenedor">
+      <div class="row">
+        <!--Proyecto 1-->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="imagenes/gestion_de_sedes.png" alt="gestión de sedes" />
+            <div class="overlay">
+              <p id="proyecto1">Gestión de sedes</p>
+              <div class="iconos-contenedor">
+                <a href="https://gestion-visitas-y-formaciones.vercel.app" target="_blank" rel="nooener noreferrer">
+                  <i class="bi bi-globe2"></i>
+                </a>
+                <a href="https://github.com/JosanFM/GestionVisitasyFormaciones" target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Proyecto 2-->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="imagenes/home_filmora.png" alt="Gestión de inventario + log in" />
+            <div class="overlay">
+              <p id="proyecto2">Filmora</p>
+              <div class="iconos-contenedor">
+                <a href="https://www.freecodecamp.org/news/tag/espanol-2/" target="_blank" rel="nooener noreferrer">
+                  <i class="bi bi-globe2"></i>
+                </a>
+                <a href="https://github.com/JosanFM/Filmora" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Proyecto 3-->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="imagenes/gestion_inventario.png" alt="Gestión de inventario + log in" />
+            <div class="overlay">
+              <p id="proyecto3">Gestión de inventario</p>
+              <div class="iconos-contenedor">
+                <a href="https://gestion-inventario-three.vercel.app/" target="_blank" rel="nooener noreferrer">
+                  <i class="bi bi-globe2"></i>
+                </a>
+                <a href="https://github.com/JosanFM/Gestion_Inventario" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Proyecto 4-->
+      </div>
+    </div>
+    <button class="btn btn-azul">
+      <a href="https://github.com/JosanFM?tab=repositories" target="_blank">
+        <span id="mas-proyectos" class="btn-text">Ver más proyectos</span>
+        <span class="btn-icon">→</span>
+      </a>
+    </button>
+  </section>
+
+  <!--Formaciones-->
+  <section id="formaciones" class="articulos justify-content-start">
+    <h2 id="formacion-titulo" class="seccion-titulo texto-negro">
+      Formación
+    </h2>
+    <div class="card">
+      <div id="formacion-titulo-tarjeta" class="card-header">
+        Más significativas:
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          Técnico Superior en Desarrollo de Aplicaciones Web (DAW) (2023 -
+          2025)
+        </li>
+        <li class="list-group-item">
+          Técnico Superior de Laboratorio Clínico y Biomédico (2016 - 2018)
+        </li>
+        <li class="list-group-item">Curso Desarrollador Python (2023).</li>
+        <li class="list-group-item">
+          Curso Desarrollador Java - Completando conocimientos impartidos en
+          DAW (2024).
+        </li>
+        <li class="list-group-item">
+          Curso Git: gestión de proyectos y trabajo en equipo con GitHub
+          (2024)
+        </li>
+        <li class="list-group-item">
+          Master en React: ReactJS, Hooks, MERN, NodeJS, JWT (2025).
+        </li>
+        <li class="list-group-item">
+          Curso Desarrollador Flutter/Dart (2025).
+        </li>
+        <li class="list-group-item">
+          Curso de introducción a la programación de PLC- automatización
+          industrial (2025).
+        </li>
+      </ul>
+    </div>
+    <button class="btn btn-azul">
+      <a href="docs/CURRICULUM VITAE.pdf" download="CURRICULUM VITAE.pdf">
+        <span id="mas-formaciones" class="btn-text">Descargar CV para ver + formaciones</span>
+        <span class="bi bi-box-arrow-down"></span>
+      </a>
+    </button>
+  </section>
+
+  <!--Screenshot-->
+  <section class="capturas texto-blanco">
+    <h2 id="capturas-titulo" class="seccion-titulo">Screenshots</h2>
+    <h3 id="capturas-subtitulo" class="seccion-descripcion texto-blanco">
+      Algunas capturas de pantalla de mis proyectos, espero que os gusten...
+      <i class="bi bi-aspect-ratio"></i>
+    </h3>
+    <h5 id="capturas-consejo">( Pulsa la imagen para verla mejor 👌 )</h5>
+
+    <!-- Contenedor del Carrusel + Botones Externos -->
+    <div class="carousel-container d-flex align-items-center">
+      <!-- Botón Prev (Izquierda) -->
+      <button class="carousel-control-custom prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <!-- Carrusel (Centro) -->
+      <div id="projectCarousel" class="carousel slide flex-grow-1" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="imagenes/proyecto1.png" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5 class="screenshot-title">First slide label</h5>
-              <p class="screenshot-text">
-                Some representative placeholder content for the first slide.
-              </p>
-            </div>
+            <a href="imagenes/gestion_de_sedes.png" data-lightbox="proyectos" data-title="Proyecto 1">
+              <img src="imagenes/gestion_de_sedes.png" class="d-block w-100" alt="Proyecto 1" />
+            </a>
           </div>
           <div class="carousel-item">
-            <img src="imagenes/proyecto2.png" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
-            </div>
+            <a href="imagenes/screenshots/gestion_de_sedes2.png" data-lightbox="proyectos" data-title="Proyecto 2">
+              <img src="imagenes/screenshots/gestion_de_sedes2.png" class="d-block w-100" alt="Proyecto 2" />
+            </a>
           </div>
           <div class="carousel-item">
-            <img src="imagenes/proyecto3.png" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>
-                Some representative placeholder content for the third slide.
-              </p>
-            </div>
+              <a href="imagenes/screenshots/gestion_de_sedes3.png" data-lightbox="proyectos" data-title="Proyecto 2">
+                <img src="imagenes/screenshots/gestion_de_sedes3.png" class="d-block w-100" alt="Proyecto 3" />
+              </a>
+          </div>
+          <div class="carousel-item">
+              <a href="imagenes/screenshots/gestion_de_sedes4.png" data-lightbox="proyectos" data-title="Proyecto 2">
+                <img src="imagenes/screenshots/gestion_de_sedes4.png" class="d-block w-100" alt="Proyecto 3" />
+              </a>
+          </div>
+          <div class="carousel-item">
+              <a href="imagenes/screenshots/gestion_de_sedes5.png" data-lightbox="proyectos" data-title="Proyecto 2">
+                <img src="imagenes/screenshots/gestion_de_sedes5.png" class="d-block w-100" alt="Proyecto 3" />
+              </a>
+          </div>
+          <div class="carousel-item">
+              <a href="imagenes/screenshots/gestion_de_sedes6.png" data-lightbox="proyectos" data-title="Proyecto 2">
+                <img src="imagenes/screenshots/gestion_de_sedes6.png" class="d-block w-100" alt="Proyecto 3" />
+              </a>
+          </div>
+          <div class="carousel-item">
+              <a href="imagenes/screenshots/filmora2.png" data-lightbox="proyectos" data-title="Proyecto 2">
+                <img src="imagenes/screenshots/filmora2.png" class="d-block w-100" alt="Proyecto 3" />
+              </a>
+          </div>
+          <div class="carousel-item">
+              <a href="imagenes/screenshots/filmora3.png" data-lightbox="proyectos" data-title="Proyecto 2">
+                <img src="imagenes/screenshots/filmora3.png" class="d-block w-100" alt="Proyecto 3" />
+              </a>
+          </div>
+          <div class="carousel-item">
+              <a href="imagenes/screenshots/filmora4.png" data-lightbox="proyectos" data-title="Proyecto 2">
+                <img src="imagenes/screenshots/filmora4.png" class="d-block w-100" alt="Proyecto 3" />
+              </a>
+          </div>
+          <div class="carousel-item">
+              <a href="imagenes/screenshots/filmora5.png" data-lightbox="proyectos" data-title="Proyecto 2">
+                <img src="imagenes/screenshots/filmora5.png" class="d-block w-100" alt="Proyecto 3" />
+              </a>
+          </div>
+          <div class="carousel-item">
+              <a href="imagenes/gestion_inventario.png" data-lightbox="proyectos" data-title="Proyecto 2">
+                <img src="imagenes/gestion_inventario.png" class="d-block w-100" alt="Proyecto 3" />
+              </a>
+          </div>
+          <div class="carousel-item">
+              <a href="imagenes/screenshots/gestion_de_inventario2.png" data-lightbox="proyectos" data-title="Proyecto 2">
+                <img src="imagenes/screenshots/gestion_de_inventario2.png" class="d-block w-100" alt="Proyecto 3" />
+              </a>
+          </div>
+          <div class="carousel-item">
+              <a href="imagenes/screenshots/gestion_de_inventario3.png" data-lightbox="proyectos" data-title="Proyecto 2">
+                <img src="imagenes/screenshots/gestion_de_inventario3.png" class="d-block w-100" alt="Proyecto 3" />
+              </a>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#capturas-carrusel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#capturas-carrusel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </button>
       </div>
-    </section>
 
-    <!--Contacto-->
-    <section
-      id="contacto"
-      class="contacto seccion-oscura py-5"
-      style="background-color: black; scroll-margin-top: 150px"
-    >
-      <div class="container rectangulo text-center">
-        <div class="row flex-column align-items-center text-center">
-          <div class="col-12 col-md-4 mb-3">
-            <h3 id="contacto-titulo" class="seccion-titulo">
-              Trabajemos juntos
-            </h3>
-          </div>
-          <div class="col-12 col-md-4 mb-3">
-            <p
-              id="contacto-texto"
-              class="descripcion"
-              style="font-size: 1.5rem"
-            >
-              Contáctame para colaborar en proyectos de desarrollo de software.
-              Transformo ideas en soluciones escalables, ya sea como freelance o
-              para integrarme en proyectos empresariales complejos.
-            </p>
-          </div>
-          <div class="col-12 col-md-4">
-            <div
-              class="d-flex flex-column flex-md-row justify-content-center gap-2"
-            >
-              <div class="d-flex flex-column align-items-center gap-3 mt-4">
-                <a
-                  href="tel:+34622941389"
-                  class="btn btn-contacto btn-llamar"
-                  style="background-color: rgb(1, 217, 245); width: 90%"
-                >
-                  <i class="bi bi-telephone-fill me-2"></i
-                  ><span id="contacto-llamar">Llamar</span>
-                </a>
-                <a
-                  href="https://wa.me/34622941389"
-                  target="_blank"
-                  class="btn btn-contacto btn-whatsapp"
-                  style="background-color: #25d366; width: 90%"
-                >
-                  <i class="bi bi-whatsapp me-2"></i
-                  ><span id="contacto-wa">WhatsApp</span>
-                </a>
-                <a
-                  href="mailto:josan1997fernandez@gmail.com"
-                  class="btn btn-contacto btn-correo"
-                  style="background-color: rgb(185, 130, 58); width: 90%"
-                >
-                  <i class="bi bi-envelope-fill me-2"></i
-                  ><span id="contacto-correo">Correo</span>
-                </a>
-                <div
-                  class="copiar-correo d-flex align-items-center justify-content-center gap-2"
-                >
-                  <div
-                    id="correoTexto"
-                    class="bg-light text-dark px-4 py-2 rounded"
-                  >
-                    josan1997fernandez@gmail.com
-                  </div>
-                  <button
-                    onclick="copiarAlPortapapeles()"
-                    class="btn btn-sm btn-outline-light"
-                    title="Copiar correo"
-                  >
-                    <i class="bi bi-clipboard"></i>
-                  </button>
+      <!-- Botón Next (Derecha) -->
+      <button class="carousel-control-custom next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
 
-                  <div id="copy-toast" class="confirmacion-copiado">
-                    <i class="bi bi-clipboard-check"></i>
-                    <span>Copiado al portapapeles</span>
-                  </div>
+  <!--Contacto-->
+  <section id="contacto" class="contacto seccion-oscura py-5" style="background-color: black; scroll-margin-top: 150px">
+    <div class="container rectangulo text-center">
+      <div class="row flex-column align-items-center text-center">
+        <div class="col-12 col-md-4 mb-3">
+          <h3 id="contacto-titulo" class="seccion-titulo">
+            Trabajemos juntos
+          </h3>
+        </div>
+        <div class="col-12 col-md-4 mb-3">
+          <p id="contacto-texto" class="descripcion" style="font-size: 1.5rem">
+            Contáctame para colaborar en proyectos de desarrollo de software.
+            Transformo ideas en soluciones escalables, ya sea como freelance o
+            para integrarme en proyectos empresariales complejos.
+          </p>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="d-flex flex-column flex-md-row justify-content-center gap-2">
+            <div class="d-flex flex-column align-items-center gap-3 mt-4">
+              <a href="tel:+34622941389" class="btn btn-contacto btn-llamar"
+                style="background-color: rgb(1, 217, 245); width: 90%">
+                <i class="bi bi-telephone-fill me-2"></i><span id="contacto-llamar">Llamar</span>
+              </a>
+              <a href="https://wa.me/34622941389" target="_blank" class="btn btn-contacto btn-whatsapp"
+                style="background-color: #25d366; width: 90%">
+                <i class="bi bi-whatsapp me-2"></i><span id="contacto-wa">WhatsApp</span>
+              </a>
+              <a href="mailto:josan1997fernandez@gmail.com" class="btn btn-contacto btn-correo"
+                style="background-color: rgb(185, 130, 58); width: 90%">
+                <i class="bi bi-envelope-fill me-2"></i><span id="contacto-correo">Correo</span>
+              </a>
+              <div class="copiar-correo d-flex align-items-center justify-content-center gap-2">
+                <div id="correoTexto" class="bg-light text-dark px-4 py-2 rounded">
+                  josan1997fernandez@gmail.com
+                </div>
+                <button onclick="copiarAlPortapapeles()" class="btn btn-sm btn-outline-light" title="Copiar correo">
+                  <i class="bi bi-clipboard"></i>
+                </button>
+
+                <div id="copy-toast" class="confirmacion-copiado">
+                  <i class="bi bi-clipboard-check"></i>
+                  <span>Copiado al portapapeles</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!--Pie de pagina (footer)-->
-    <footer
-      class="d-flex flex-column align-items-center justify-content-center"
-    >
-      <img
-        src="imagenes/icono-blanco.svg"
-        alt="Logo del Portafolio"
-        class="footer-logo"
-      />
-      <p id="footer-texto1" class="footer-texto text-center">
-        Aprendo, creo y desarrollo todos los días.
-      </p>
-      <p id="footer-texto2" class="footer-texto text-center">
-        Vamos a crear y desarrollar proyectos juntos.
-      </p>
-      <div
-        class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center"
-      >
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-twitter-x"></i>
-        </a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-github"></i>
-        </a>
-        <a
-          href="www.linkedin.com/in/josé-antonio-fernández-martín-952579234"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="bi bi-linkedin"></i>
-        </a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-instagram"></i>
-        </a>
-        <a
-          href="mailto:josan1997fernandez@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="bi bi-envelope"></i>
-        </a>
-      </div>
-      <div id="derechos" class="derechos-de-autor">
-        Creado por José Antonio Fernández Martín (2025) <span>&#169;</span>
-      </div>
-    </footer>
+  <!--Pie de pagina (footer)-->
+  <footer class="d-flex flex-column align-items-center justify-content-center">
+    <img src="imagenes/icono-blanco.svg" alt="Logo del Portafolio" class="footer-logo" />
+    <p id="footer-texto1" class="footer-texto text-center">
+      Aprendo, creo y desarrollo todos los días.
+    </p>
+    <p id="footer-texto2" class="footer-texto text-center">
+      Vamos a crear y desarrollar proyectos juntos.
+    </p>
+    <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-twitter-x"></i>
+      </a>
+      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-github"></i>
+      </a>
+      <a href="www.linkedin.com/in/josé-antonio-fernández-martín-952579234" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="mailto:josan1997fernandez@gmail.com" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-envelope"></i>
+      </a>
+    </div>
+    <div id="derechos" class="derechos-de-autor">
+      Creado por José Antonio Fernández Martín (2025) <span>&#169;</span>
+    </div>
+  </footer>
 
-    <!--Link que se debe colocar al final, de bootstrap para JS-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-      crossorigin="anonymous"
-    ></script>
+  <!--Link que se debe colocar al final, de bootstrap para JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+  <!-- Lightbox2 JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 
-    <script>
-      // Efecto al hacer scroll
-      window.addEventListener("scroll", function () {
-        const navbar = document.querySelector(".navbar");
-        if (window.scrollY > 50) {
-          navbar.classList.add("scrolled");
-        } else {
-          navbar.classList.remove("scrolled");
-        }
-      });
-    </script>
-
-    <!--Efecto para underline abajo de la sección en la que estes-->
-    <script>
-      const scrollSpy = new bootstrap.ScrollSpy(document.body, {
-        target: "#navbarContent",
-        offset: 100,
-      });
-    </script>
-
-    <script>
-      function copiarCorreo() {
-        const correo = document.getElementById("correoTexto").innerText;
-        navigator.clipboard
-          .writeText(correo)
-          .then(() => {
-            alert("Correo copiado al portapapeles");
-          })
-          .catch((err) => {
-            console.error("Error al copiar: ", err);
-          });
+  <script>
+    // Efecto al hacer scroll
+    window.addEventListener("scroll", function () {
+      const navbar = document.querySelector(".navbar");
+      if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
       }
-    </script>
+    });
+  </script>
 
-    <script>
-      function copiarAlPortapapeles(texto) {
-        navigator.clipboard.writeText(texto).then(() => {
-          const toast = document.getElementById("copy-toast");
-          toast.style.display = "block";
-          setTimeout(() => {
-            toast.style.display = "none";
-          }, 2000); // Se oculta después de 2 segundos
+  <!--Efecto para underline abajo de la sección en la que estes-->
+  <script>
+    const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+      target: "#navbarContent",
+      offset: 100,
+    });
+  </script>
+
+  <script>
+    function copiarCorreo() {
+      const correo = document.getElementById("correoTexto").innerText;
+      navigator.clipboard
+        .writeText(correo)
+        .then(() => {
+          alert("Correo copiado al portapapeles");
+        })
+        .catch((err) => {
+          console.error("Error al copiar: ", err);
         });
+    }
+  </script>
+
+  <script>
+    function copiarAlPortapapeles(texto) {
+      navigator.clipboard.writeText(texto).then(() => {
+        const toast = document.getElementById("copy-toast");
+        toast.style.display = "block";
+        setTimeout(() => {
+          toast.style.display = "none";
+        }, 2000); // Se oculta después de 2 segundos
+      });
+    }
+  </script>
+
+  <script>
+    let currentLang = "es";
+
+    // Función para cargar las traducciones
+    async function loadTranslations() {
+      try {
+        const response = await fetch("translations.json");
+        if (!response.ok) throw new Error("Error cargando traducciones");
+        return await response.json();
+      } catch (error) {
+        console.error("Error:", error);
+        return null;
       }
-    </script>
+    }
 
-    <script>
-      let currentLang = "es";
+    // Función para aplicar traducciones y actualizar el botón
+    async function applyTranslations(lang) {
+      const translations = await loadTranslations();
+      if (!translations) return;
 
-      // Función para cargar las traducciones
-      async function loadTranslations() {
-        try {
-          const response = await fetch("translations.json");
-          if (!response.ok) throw new Error("Error cargando traducciones");
-          return await response.json();
-        } catch (error) {
-          console.error("Error:", error);
-          return null;
-        }
+      // 1. Actualizar todos los textos de la página
+      for (const [key, text] of Object.entries(translations[lang])) {
+        const element = document.getElementById(key);
+        if (element) element.textContent = text;
       }
 
-      // Función para aplicar traducciones y actualizar el botón
-      async function applyTranslations(lang) {
-        const translations = await loadTranslations();
-        if (!translations) return;
-
-        // 1. Actualizar todos los textos de la página
-        for (const [key, text] of Object.entries(translations[lang])) {
-          const element = document.getElementById(key);
-          if (element) element.textContent = text;
-        }
-
-        // 2. Actualizar el texto del botón correctamente
-        const languageButton = document.getElementById("languageToggle");
-        if (lang === "es") {
-          languageButton.innerHTML = '<span id="languageText">English</span>';
-        } else {
-          languageButton.innerHTML = '<span id="languageText">Español</span>';
-        }
+      // 2. Actualizar el texto del botón correctamente
+      const languageButton = document.getElementById("languageToggle");
+      if (lang === "es") {
+        languageButton.innerHTML = '<span id="languageText">English</span>';
+      } else {
+        languageButton.innerHTML = '<span id="languageText">Español</span>';
       }
+    }
 
-      // Evento para el botón de cambio de idioma
-      document
-        .getElementById("languageToggle")
-        .addEventListener("click", async () => {
-          currentLang = currentLang === "es" ? "en" : "es";
-          await applyTranslations(currentLang);
-          localStorage.setItem("portfolioLanguage", currentLang);
-        });
-
-      // Al cargar la página
-      document.addEventListener("DOMContentLoaded", async () => {
-        const savedLang = localStorage.getItem("portfolioLanguage") || "es";
-        currentLang = savedLang;
+    // Evento para el botón de cambio de idioma
+    document
+      .getElementById("languageToggle")
+      .addEventListener("click", async () => {
+        currentLang = currentLang === "es" ? "en" : "es";
         await applyTranslations(currentLang);
+        localStorage.setItem("portfolioLanguage", currentLang);
       });
 
-      // mostrar mensaje de descarga
-      document
-        .getElementById("descargar-cv")
-        .addEventListener("click", function (e) {
-          // Prevenir el comportamiento por defecto para controlar el flujo
-          e.preventDefault();
+    // Al cargar la página
+    document.addEventListener("DOMContentLoaded", async () => {
+      const savedLang = localStorage.getItem("portfolioLanguage") || "es";
+      currentLang = savedLang;
+      await applyTranslations(currentLang);
+    });
 
-          // Guardar referencia a los elementos del botón
-          const boton = this;
-          const icono = document.getElementById("cv-icono");
-          const texto = document.getElementById("cv-texto-boton");
+    // mostrar mensaje de descarga
+    document
+      .getElementById("descargar-cv")
+      .addEventListener("click", function (e) {
+        // Prevenir el comportamiento por defecto para controlar el flujo
+        e.preventDefault();
 
-          // Guardar el estado original
-          const claseOriginal = boton.className;
-          const iconoOriginal = icono.className;
-          const textoOriginal = texto.textContent;
+        // Guardar referencia a los elementos del botón
+        const boton = this;
+        const icono = document.getElementById("cv-icono");
+        const texto = document.getElementById("cv-texto-boton");
 
-          // Cambiar a estado "descargado"
-          boton.className = "btn btn-success mt-3";
-          icono.className = "bi bi-check2-circle me-2";
-          texto.textContent = "¡Descargado!";
+        // Guardar el estado original
+        const claseOriginal = boton.className;
+        const iconoOriginal = icono.className;
+        const textoOriginal = texto.textContent;
 
-          // Iniciar la descarga después de un pequeño retraso
-          setTimeout(() => {
-            // Crear un enlace temporal para la descarga
-            const link = document.createElement("a");
-            link.href = this.href;
-            link.download = this.download;
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-          }, 100);
+        // Cambiar a estado "descargado"
+        boton.className = "btn btn-success mt-3";
+        icono.className = "bi bi-check2-circle me-2";
+        texto.textContent = "¡Descargado!";
 
-          // Volver al estado original después de 3 segundos
-          setTimeout(() => {
-            boton.className = claseOriginal;
-            icono.className = iconoOriginal;
-            texto.textContent = textoOriginal;
-          }, 3000);
-        });
-    </script>
-  </body>
+        // Iniciar la descarga después de un pequeño retraso
+        setTimeout(() => {
+          // Crear un enlace temporal para la descarga
+          const link = document.createElement("a");
+          link.href = this.href;
+          link.download = this.download;
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        }, 100);
+
+        // Volver al estado original después de 3 segundos
+        setTimeout(() => {
+          boton.className = claseOriginal;
+          icono.className = iconoOriginal;
+          texto.textContent = textoOriginal;
+        }, 3000);
+      });
+  </script>
+</body>
+
 </html>

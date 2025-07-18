@@ -367,6 +367,10 @@ h1 {
     background-color: #00002e;
 }
 
+#capturas-consejo {
+    font-size: small;
+}
+
 .capturas .carousel {
     max-width: 800px;
 }
@@ -377,9 +381,11 @@ h1 {
 }
 
 .carousel-item img:hover {
-    opacity: 0.3;
+    opacity: 0.8;
     border: solid black 2px;
 }
+
+
 
 .carousel-item div h5 {
     font-size: 2rem;
@@ -390,6 +396,8 @@ h1 {
     font-weight: bold;
     color: white;
 }
+
+
 
 /*Skills*/
 
@@ -678,3 +686,29 @@ footer {
 
 
 
+
+
+
+/* Botones personalizados de anterior y siguiente */
+.carousel-control-custom {
+  background: rgb(13, 110, 253);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  margin: 0 10px;
+}
+
+.carousel-control-custom:hover {
+  background: rgb(13, 110, 253, 0.7);
+}
+
+/* Ocultar controles nativos de Bootstrap */
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+}

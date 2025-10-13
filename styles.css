@@ -281,7 +281,8 @@ h1 {
     margin-bottom: 20px;
 }
 
-.proyecto img {
+.proyecto img,
+.proyecto video {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -331,7 +332,8 @@ h1 {
 }
 
 /* Efectos hover */
-.proyecto:hover img {
+.proyecto:hover img,
+.proyecto:hover video {
     opacity: 0.2;
     transform: scale(1.05);
 }

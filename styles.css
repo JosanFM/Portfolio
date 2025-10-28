@@ -495,6 +495,31 @@ h1 {
     box-shadow: 0 6px 12px rgba(10, 36, 99, 2);
 }
 
+/* Tarjeta destacada para COBOL */
+.skill-card-featured {
+    background: linear-gradient(135deg, rgba(10, 36, 99, 0.1), rgba(14, 2, 78, 0.1));
+    border: 2px solid var(--azul-profundo);
+    box-shadow: 0 6px 15px rgba(10, 36, 99, 0.3);
+    padding: 20px 15px;
+}
+
+.skill-card-featured:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(10, 36, 99, 0.4);
+    border-color: var(--azul-oscuro);
+}
+
+/* Centrar la tarjeta de COBOL */
+.row > .col-12.col-sm-8.col-md-6.col-lg-3 {
+    display: flex;
+    justify-content: center;
+}
+
+.row > .col-12.col-sm-8.col-md-6.col-lg-3 > .skill-card-featured {
+    width: 100%;
+    max-width: 400px;
+}
+
 .progress {
     height: 6px;
     border-radius: 3px;

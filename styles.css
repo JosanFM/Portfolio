@@ -509,6 +509,47 @@ h1 {
     border-color: var(--azul-oscuro);
 }
 
+/* Tarjeta COBOL con logo de fondo */
+.skill-card-cobol {
+    background-image: url('../imagenes/imagen-cobol.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    opacity: 0.7;
+}
+
+.skill-icon-cobol-overlay {
+    position: relative;
+    z-index: 2;
+}
+
+.card-title-cobol {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.skill-subtitle-cobol {
+    font-size: 0.9rem;
+    color: white;
+    margin: 5px 0 0 0;
+    font-weight: 500;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.skill-card-cobol:hover {
+    background-size: contain;
+    opacity: 0.85;
+}
+
 /* Centrar la tarjeta de COBOL */
 .row > .col-12.col-sm-8.col-md-6.col-lg-3 {
     display: flex;

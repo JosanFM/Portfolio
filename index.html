@@ -1,646 +1,817 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <!--Metadatos-->
+    <meta charset="UTF-8" />
+    <meta name="author" content="José Antonio Fernández" />
+    <meta
+      name="description"
+      content="Portafolio de Desarrollo Web de José Antonio Fernández"
+    />
+    <meta name="keywords" content="HTML, CSS, JavaScript, React" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <!--Metadatos-->
-  <meta charset="UTF-8" />
-  <meta name="author" content="José Antonio Fernández" />
-  <meta name="description" content="Portafolio de Desarrollo Web de José Antonio Fernández" />
-  <meta name="keywords" content="HTML, CSS, JavaScript, React" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>José A. | Desarrollo de Software</title>
 
-  <title>José A. | Desarrollo de Software</title>
+    <!--Favicon (icono de la pestaña)-->
+    <link rel="icon" type="image/x-icon" href="imagenes/favicon.png" />
+    <!--CSS-->
+    <link rel="stylesheet" href="styles.css" />
 
-  <!--Favicon (icono de la pestaña)-->
-  <link rel="icon" type="image/x-icon" href="imagenes/favicon.png" />
-  <!--CSS-->
-  <link rel="stylesheet" href="styles.css" />
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Dirt&display=swap"
+      rel="stylesheet"
+    />
 
-  <!--Google fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Dirt&display=swap"
-    rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <!-- Lightbox2 CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
 
-  <!--Bootstrap-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
-  <!-- Lightbox2 CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <!-- Font Awesome para iconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!--devicons para iconos-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+  </head>
 
-  <!-- Font Awesome para iconos -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <!--devicons para iconos-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
-</head>
-
-<body data-bs-spy="scroll" data-bs-target="#navbarContent" data-bs-offset="100" tabindex="0">
-  <!--Barra de navegacion-->
-  <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top shadow-sm">
-    <div class="container">
-      <!-- Logo/Brand -->
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="imagenes/favicon-cabecera.png" alt="Logo" width="40" height="40"
-          class="d-inline-block align-top me-2" />
-        <span id="home" class="fw-bold">Home</span>
-      </a>
-
-      <!-- Botón Hamburguesa -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Contenido del Navbar -->
-      <div class="collapse navbar-collapse" id="navbarContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active px-3 position-relative" href="#sobre-mi">
-              <i class="bi bi-file-earmark-person"></i>
-              <span id="about-link" class="nav-link-text">Sobre mí</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active px-3 position-relative" href="#experiencia">
-              <i class="bi bi-briefcase"></i>
-              <span id="experiencia-link" class="nav-link-text">Experiencia</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-3 position-relative" href="#proyectos">
-              <i class="bi bi-file-earmark-zip"></i>
-              <span id="projects" class="nav-link-text">Proyectos</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-3 position-relative" href="#formaciones">
-              <i class="fa-solid fa-school"></i>
-              <span id="training" class="nav-link-text">Formacion</span>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link px-3 position-relative" href="#contacto">
-              <i class="bi bi-person-lines-fill"></i>
-              <span id="contact" class="nav-link-text">Contacto</span>
-            </a>
-          </li>
-          <button id="languageToggle" class="btn btn-primary">English</button>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Seccion Hero -->
-  <section class="hero align-items-stretch">
-    <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
-      <img class="hero-foto-personal" src="imagenes/foto_perfil_madrid.png" alt="Foto de Jane Doe" />
-      <h1 id="welcome" class="section-title texto-negro">
-        <b>[</b> Bienvenido a mi portafolio <b>]</b>
-      </h1>
-      <h2 id="frase-cabecera">
-        Desarrollo Software y COBOL: desde Mainframe hasta Cloud.
-      </h2>
-      <h2 id="frase-cabecera2">Transformando ideas en código moderno y legacy.</h2>
-    </div>
-
-    <!-- Hard Skills -->
-    <div class="container py-4">
-      <div class="row justify-content-center">
-        <div class="col-12 text-center">
-          <h1 id="skills" class="section-title texto-negro">
-            Technical Skills
-          </h1>
-        </div>
-      </div>
-      
-      <div class="row justify-content-center">
-        
-        <!-- Java -->
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-          <div class="skill-card text-center">
-            <div class="skill-icon java-icon">
-              <i class="fab fa-java colored"></i>
-            </div>
-            <h5 class="card-title">Java</h5>
-          </div>
-        </div>
-        <!-- Python -->
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-          <div class="skill-card text-center">
-            <div class="skill-icon python-icon">
-              <i class="fab fa-python colored"></i>
-            </div>
-            <h5 class="card-title">Python</h5>
-          </div>
-        </div>
-        
-        
-        <!-- COBOL - Destacado -->
-        <div class="col-12 col-sm-8 col-md-6 col-lg-3">
-          <div class="skill-card skill-card-featured skill-card-cobol text-center">
-            <div class="skill-icon-cobol-overlay">
-            </div>
-          </div>
-        </div>
-        <!-- Dart -->
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-          <div class="skill-card text-center">
-            <div class="skill-icon dart-icon">
-              <i class="devicon-dart-plain colored"></i>
-            </div>
-            <h5 class="card-title">Dart</h5>
-          </div>
-        </div>
-        
-        <!-- Flutter -->
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-          <div class="skill-card text-center">
-            <div class="skill-icon flutter-icon">
-              <i class="devicon-flutter-plain colored"></i>
-            </div>
-            <h5 class="card-title">Flutter</h5>
-          </div>
-        </div>
-
-
-        <!-- Docker -->
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-          <div class="skill-card text-center">
-            <div class="skill-icon docker-icon">
-              <i class="fab fa-docker colored"></i>
-            </div>
-            <h5 class="card-title">Docker</h5>
-          </div>
-        </div>
-
-        <!-- Linux -->
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-          <div class="skill-card text-center">
-            <div class="skill-icon linux-icon">
-              <i class="fab fa-linux colored"></i>
-            </div>
-            <h5 class="card-title">Linux</h5>
-          </div>
-        </div>
-
-        <!-- PostgreSQL - Supabase -->
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-          <div class="skill-card text-center">
-            <div class="skill-icon db-icon">
-              <i class="fas fa-database colored"></i>
-            </div>
-            <h5 class="card-title">PostgreSQL / Supabase</h5>
-          </div>
-        </div>
-
-        <!-- HTML y CSS -->
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-          <div class="skill-card text-center">
-            <div class="skill-icon">
-              <i class="fab fa-html5 colored" , style="color: #e34f26"></i>
-              <i class="fab fa-css3-alt colored css-icon"></i>
-            </div>
-            <h5 class="card-title">HTML5 + CSS</h5>
-          </div>
-        </div>
-
-        <!-- JavaScript -->
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-          <div class="skill-card text-center">
-            <div class="skill-icon js-icon">
-              <i class="fab fa-js colored"></i>
-            </div>
-            <h5 class="card-title">JavaScript</h5>
-          </div>
-        </div>
-
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-          <div class="skill-card text-center">
-            <div class="skill-icon react-icon">
-              <i class="fab fa-react colored"></i>
-            </div>
-            <h5 class="card-title">React</h5>
-          </div>
-        </div>
-
-        <!-- Bootstrap -->
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-          <div class="skill-card text-center">
-            <div class="skill-icon bootstrap-icon">
-              <i class="fab fa-bootstrap colored"></i>
-            </div>
-            <h5 class="card-title">Bootstrap</h5>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Soft Skills -->
-    <div class="container py-4">
-      <div class="row justify-content-center">
-        <div class="col-12 text-center">
-          <h1 class="section-title texto-negro">Soft Skills</h1>
-        </div>
-      </div>
-
-      <div class="row justify-content-center">
-        <!-- Comunicación -->
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-          <div class="skill-card text-center">
-            <div class="skill-icon soft-icon">
-              <i class="fas fa-comments colored" style="color: #4e73df"></i>
-            </div>
-            <h5 class="card-title">Comunicación</h5>
-          </div>
-        </div>
-
-        <!-- Trabajo en equipo -->
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-          <div class="skill-card text-center">
-            <div class="skill-icon soft-icon">
-              <i class="fas fa-users colored" style="color: #1cc88a"></i>
-            </div>
-            <h5 class="card-title">Trabajo en equipo</h5>
-          </div>
-        </div>
-
-        <!-- Gestión de presión y objetivos -->
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-          <div class="skill-card text-center">
-            <div class="skill-icon soft-icon">
-              <i class="fas fa-bullseye colored" style="color: #e83e8c"></i>
-            </div>
-            <h5 class="card-title">Trabajo bajo presión</h5>
-          </div>
-        </div>
-
-        <!-- Resolución de problemas -->
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-          <div class="skill-card text-center">
-            <div class="skill-icon soft-icon">
-              <i class="fas fa-lightbulb colored" style="color: #f6c23e"></i>
-            </div>
-            <h5 class="card-title">Resolución de problemas</h5>
-          </div>
-        </div>
-
-        <!-- Adaptabilidad -->
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-          <div class="skill-card text-center">
-            <div class="skill-icon soft-icon">
-              <i class="fas fa-sync-alt colored" style="color: #e74a3b"></i>
-            </div>
-            <h5 class="card-title">Adaptabilidad</h5>
-          </div>
-        </div>
-
-        <!-- Gestión del tiempo -->
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-          <div class="skill-card text-center">
-            <div class="skill-icon soft-icon">
-              <i class="fas fa-clock colored" style="color: #36b9cc"></i>
-            </div>
-            <h5 class="card-title">Gestión del tiempo</h5>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="hero-inferior">
-      <img class="hero-inferior-imagen img-fluid" src="imagenes/hero-inferior.svg"
-        alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React." />
-    </div>
-  </section>
-
-  <!--Sobre mi-->
-  <section id="sobre-mi" class="sobre-mi seccion-oscura">
-    <div class="contenedor">
-      <h2 id="sobre-mi-titulo" class="seccion-titulo">Un poco sobre mí</h2>
-      <p id="sobre-mi-texto" class="seccion-texto">
-        Durante 6 años en la industria, descubrí el poder de la tecnología
-        para revolucionar procesos. Hoy, como Técnico Superior en DAW con 
-        especialización en COBOL, combino mi conocimiento en desarrollo web,
-        móvil y sistemas mainframe para digitalizar ideas que resuelven problemas 
-        reales tanto en entornos modernos como legacy. Mi experiencia abarca 
-        desde aplicaciones web con React hasta sistemas críticos empresariales 
-        con COBOL, JCL y DB2.
-      </p>
-
-      <button class="btn btn-azul">
-        <a href="#contacto">
-          <span id="sobre-mi-boton-contacto" class="btn-text">Contacto</span>
-          <span class="btn-icon">→</span>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbarContent"
+    data-bs-offset="100"
+    tabindex="0"
+  >
+    <!--Barra de navegacion-->
+    <nav
+      class="navbar navbar-expand-md navbar-dark bg-primary fixed-top shadow-sm"
+    >
+      <div class="container">
+        <!-- Logo/Brand -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img
+            src="imagenes/favicon-cabecera.png"
+            alt="Logo"
+            width="40"
+            height="40"
+            class="d-inline-block align-top me-2"
+          />
+          <span id="home" class="fw-bold">Home</span>
         </a>
-      </button>
-    </div>
-  </section>
 
-  <!--Experiencia-->
-  <section id="experiencia" class="experiencia seccion-clara">
-    <h2 id="experiencia-titulo" class="seccion-titulo texto-negro">
-      Experiencia
-    </h2>
-    <div class="container text-center">
-      <div class="row">
-        <!--COBOL y Mainframe-->
-        <div class="columna col-12 col-md-4">
-          <i class="fas fa-server" style="font-size: 2.5rem; color: #b7dbff; background-color: #00002e; padding: 8px 19px; border-radius: 50%;"></i>
-          <p id="experiencia-cobol-titulo" class="experiencia-titulo">
-            COBOL / Mainframe
-          </p>
-          <p id="experiencia-cobol-texto">
-            Especializado en desarrollo y mantenimiento de sistemas críticos 
-            empresariales mediante COBOL. Experiencia en programación estructurada
-            para sistemas mainframe, trabajando con JCL, DB2 y VSAM para 
-            aplicaciones bancarias y financieras. Desarrollo de programas batch
-            para procesamiento de transacciones y gestión de archivos en entornos 
-            de alto volumen. Conocimiento en CICS para aplicaciones transaccionales.
-          </p>
-          <div class="badges-contenedor">
-            <span class="badge text-bg-primary">COBOL</span>
-            <span class="badge text-bg-primary">JCL</span>
-            <span class="badge text-bg-primary">DB2</span>
-            <span class="badge text-bg-primary">VSAM</span>
-          </div>
+        <!-- Botón Hamburguesa -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Contenido del Navbar -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active px-3 position-relative"
+                href="#sobre-mi"
+              >
+                <i class="bi bi-file-earmark-person"></i>
+                <span id="about-link" class="nav-link-text">Sobre mí</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active px-3 position-relative"
+                href="#experiencia"
+              >
+                <i class="bi bi-briefcase"></i>
+                <span id="experiencia-link" class="nav-link-text"
+                  >Experiencia</span
+                >
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3 position-relative" href="#proyectos">
+                <i class="bi bi-file-earmark-zip"></i>
+                <span id="projects" class="nav-link-text">Proyectos</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3 position-relative" href="#formaciones">
+                <i class="fa-solid fa-school"></i>
+                <span id="training" class="nav-link-text">Formacion</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link px-3 position-relative" href="#contacto">
+                <i class="bi bi-person-lines-fill"></i>
+                <span id="contact" class="nav-link-text">Contacto</span>
+              </a>
+            </li>
+            <button id="languageToggle" class="btn btn-primary">English</button>
+          </ul>
         </div>
-
-        <!--Desarrollo Web-->
-        <div class="columna col-12 col-md-4">
-          <i class="bi bi-laptop"></i>
-          <p id="experiencia1-titulo" class="experiencia-titulo">
-            Desarrollo web
-          </p>
-          <p id="experiencia1-texto">
-            Participé en el desarrollo de una plataforma web completamente
-            funcional y responsive para una empresa externa, destinada al
-            control de visitas y formaciones en distintas sedes. Trabajé en un
-            equipo multidisciplinario utilizando metodologías ágiles (Scrum
-            con sprints), gestionando tareas mediante Trello y utilizando
-            Git/GitHub para el control de versiones. El frontend fue
-            desarrollado con React, Vite y Bootstrap, mientras que el backend
-            y la base de datos se implementaron con Supabase y PostgreSQL.
-          </p>
-          <div class="badges-contenedor">
-            <span class="badge text-bg-primary">HTML</span>
-            <span class="badge text-bg-primary">CSS</span>
-            <span class="badge text-bg-primary">JavaScript</span>
-            <span class="badge text-bg-primary">React</span>
-            <span class="badge text-bg-primary">Supabase</span>
-          </div>
-        </div>
-
-        <!--desarrollo móvil-->
-        <div class="columna col-12 col-md-4">
-          <i class="bi bi-phone"></i>
-          <!-- Icono básico -->
-          <p id="experiencia2-titulo" class="experiencia-titulo">
-            Desarrollo Móvil
-          </p>
-          <p id="experiencia2-texto">
-            Desarrollé de manera independiente una aplicación móvil
-            personalizada para un aficionado al cine, con funcionalidades
-            clave como búsqueda intuitiva de próximos estrenos, películas
-            populares y favoritas. Llevé a cabo todo el ciclo de desarrollo en
-            solitario: desde el análisis de requerimientos hasta el despliegue
-            final, implementando la base de datos Isar, el frontend adaptativo
-            y la integración con APIs externas. Mediante un proceso continuo
-            de feedback con el cliente a través de reuniones periódicas,
-            ajusté la aplicación a sus necesidades específicas, y hasta hoy
-            sigo encargándome de su mantenimiento y mejora continua.
-          </p>
-          <div class="badges-contenedor">
-            <span class="badge text-bg-primary">Flutter</span>
-            <span class="badge text-bg-primary">Dart</span>
-            <span class="badge text-bg-primary">Isar</span>
-            <span class="badge text-bg-primary">API</span>
-          </div>
-        </div>
-
       </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- Sección CV y GitHub (recursos) -->
-  <section class="recursos seccion-clara">
-    <div class="container text-center">
-      <h2 id="recursos-titulo" class="seccion-titulo texto-negro">
-        Recursos Profesionales
+    <!-- Seccion Hero -->
+    <section class="hero align-items-stretch">
+      <div
+        class="hero-principal d-flex flex-column justify-content-center align-items-center"
+      >
+        <img
+          class="hero-foto-personal"
+          src="imagenes/foto_perfil_madrid.png"
+          alt="Foto de Jane Doe"
+        />
+        <h1 id="welcome" class="section-title texto-negro">
+          <b>[</b> Bienvenido a mi portafolio <b>]</b>
+        </h1>
+        <h2 id="frase-cabecera">
+          Desarrollo Software y COBOL: desde Mainframe hasta Cloud.
+        </h2>
+        <h2 id="frase-cabecera2">
+          Transformando ideas en código moderno y legacy.
+        </h2>
+      </div>
+
+      <!-- Hard Skills -->
+      <div class="container py-4">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 id="skills" class="section-title texto-negro">
+              Technical Skills
+            </h1>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <!-- Java -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="skill-card text-center">
+              <div class="skill-icon java-icon">
+                <i class="fab fa-java colored"></i>
+              </div>
+              <h5 class="card-title">Java</h5>
+            </div>
+          </div>
+          <!-- Python -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="skill-card text-center">
+              <div class="skill-icon python-icon">
+                <i class="fab fa-python colored"></i>
+              </div>
+              <h5 class="card-title">Python</h5>
+            </div>
+          </div>
+
+          <!-- COBOL - Destacado -->
+          <div class="col-12 col-sm-8 col-md-6 col-lg-3">
+            <div
+              class="skill-card skill-card-featured skill-card-cobol text-center"
+            >
+              <div class="skill-icon-cobol-overlay"></div>
+            </div>
+          </div>
+          <!-- Dart -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="skill-card text-center">
+              <div class="skill-icon dart-icon">
+                <i class="devicon-dart-plain colored"></i>
+              </div>
+              <h5 class="card-title">Dart</h5>
+            </div>
+          </div>
+
+          <!-- Flutter -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="skill-card text-center">
+              <div class="skill-icon flutter-icon">
+                <i class="devicon-flutter-plain colored"></i>
+              </div>
+              <h5 class="card-title">Flutter</h5>
+            </div>
+          </div>
+
+          <!-- Docker -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="skill-card text-center">
+              <div class="skill-icon docker-icon">
+                <i class="fab fa-docker colored"></i>
+              </div>
+              <h5 class="card-title">Docker</h5>
+            </div>
+          </div>
+
+          <!-- Linux -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="skill-card text-center">
+              <div class="skill-icon linux-icon">
+                <i class="fab fa-linux colored"></i>
+              </div>
+              <h5 class="card-title">Linux</h5>
+            </div>
+          </div>
+
+          <!-- PostgreSQL - Supabase -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="skill-card text-center">
+              <div class="skill-icon db-icon">
+                <i class="fas fa-database colored"></i>
+              </div>
+              <h5 class="card-title">PostgreSQL / Supabase</h5>
+            </div>
+          </div>
+
+          <!-- HTML y CSS -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="skill-card text-center">
+              <div class="skill-icon">
+                <i class="fab fa-html5 colored" , style="color: #e34f26"></i>
+                <i class="fab fa-css3-alt colored css-icon"></i>
+              </div>
+              <h5 class="card-title">HTML5 + CSS</h5>
+            </div>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="skill-card text-center">
+              <div class="skill-icon js-icon">
+                <i class="fab fa-js colored"></i>
+              </div>
+              <h5 class="card-title">JavaScript</h5>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="skill-card text-center">
+              <div class="skill-icon react-icon">
+                <i class="fab fa-react colored"></i>
+              </div>
+              <h5 class="card-title">React</h5>
+            </div>
+          </div>
+
+          <!-- Bootstrap -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="skill-card text-center">
+              <div class="skill-icon bootstrap-icon">
+                <i class="fab fa-bootstrap colored"></i>
+              </div>
+              <h5 class="card-title">Bootstrap</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="container py-4">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="section-title texto-negro">Soft Skills</h1>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <!-- Comunicación -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="skill-card text-center">
+              <div class="skill-icon soft-icon">
+                <i class="fas fa-comments colored" style="color: #4e73df"></i>
+              </div>
+              <h5 class="card-title">Comunicación</h5>
+            </div>
+          </div>
+
+          <!-- Trabajo en equipo -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="skill-card text-center">
+              <div class="skill-icon soft-icon">
+                <i class="fas fa-users colored" style="color: #1cc88a"></i>
+              </div>
+              <h5 class="card-title">Trabajo en equipo</h5>
+            </div>
+          </div>
+
+          <!-- Gestión de presión y objetivos -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="skill-card text-center">
+              <div class="skill-icon soft-icon">
+                <i class="fas fa-bullseye colored" style="color: #e83e8c"></i>
+              </div>
+              <h5 class="card-title">Trabajo bajo presión</h5>
+            </div>
+          </div>
+
+          <!-- Resolución de problemas -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="skill-card text-center">
+              <div class="skill-icon soft-icon">
+                <i class="fas fa-lightbulb colored" style="color: #f6c23e"></i>
+              </div>
+              <h5 class="card-title">Resolución de problemas</h5>
+            </div>
+          </div>
+
+          <!-- Adaptabilidad -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="skill-card text-center">
+              <div class="skill-icon soft-icon">
+                <i class="fas fa-sync-alt colored" style="color: #e74a3b"></i>
+              </div>
+              <h5 class="card-title">Adaptabilidad</h5>
+            </div>
+          </div>
+
+          <!-- Gestión del tiempo -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="skill-card text-center">
+              <div class="skill-icon soft-icon">
+                <i class="fas fa-clock colored" style="color: #36b9cc"></i>
+              </div>
+              <h5 class="card-title">Gestión del tiempo</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-inferior">
+        <img
+          class="hero-inferior-imagen img-fluid"
+          src="imagenes/hero-inferior.svg"
+          alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React."
+        />
+      </div>
+    </section>
+
+    <!--Sobre mi-->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+      <div class="contenedor">
+        <h2 id="sobre-mi-titulo" class="seccion-titulo">Un poco sobre mí</h2>
+        <p id="sobre-mi-texto" class="seccion-texto">
+          Durante 6 años en la industria, descubrí el poder de la tecnología
+          para revolucionar procesos. Hoy, como Técnico Superior en DAW con
+          especialización en COBOL, combino mi conocimiento en desarrollo web,
+          móvil y sistemas mainframe para digitalizar ideas que resuelven
+          problemas reales tanto en entornos modernos como legacy. Mi
+          experiencia abarca desde aplicaciones web con React hasta sistemas
+          críticos empresariales con COBOL, JCL y DB2.
+        </p>
+
+        <button class="btn btn-azul">
+          <a href="#contacto">
+            <span id="sobre-mi-boton-contacto" class="btn-text">Contacto</span>
+            <span class="btn-icon">→</span>
+          </a>
+        </button>
+      </div>
+    </section>
+
+    <!--Experiencia-->
+    <section id="experiencia" class="experiencia seccion-clara">
+      <h2 id="experiencia-titulo" class="seccion-titulo texto-negro">
+        Experiencia
       </h2>
-      <p id="recursos-texto" class="seccion-texto mb-5">
-        Accede a mi currículum y perfil de GitHub para conocer más sobre mi
-        trabajo.
-      </p>
-
-      <div class="row justify-content-center">
-        <!-- Tarjeta del CV -->
-        <div class="col-12 col-md-6 col-lg-5 mb-4 mb-lg-0">
-          <div class="card recursos-card h-100 shadow-sm">
-            <div class="card-body text-center p-4">
-              <div class="recursos-icono mb-3">
-                <i class="fas fa-file-pdf fa-3x" style="color: #e74a3b"></i>
-              </div>
-              <h3 id="cv-titulo" class="card-title">Currículum Vitae</h3>
-              <p id="cv-texto" class="card-text">
-                Descarga mi CV completo con toda mi experiencia, formación y
-                habilidades.
-              </p>
-              <a href="docs/CV_Jose_Antonio_Fernandez_Martin.pdf" class="btn btn-outline-dark mt-3"
-                download="CV_José_Antonio_Fernández.pdf" id="descargar-cv">
-                <i id="cv-icono" class="bi bi-download me-2"></i>
-                <span id="cv-texto-boton">Descargar CV</span>
-              </a>
+      <div class="container text-center">
+        <div class="row">
+          <!--COBOL y Mainframe-->
+          <div class="columna col-12 col-md-4">
+            <i
+              class="fas fa-server"
+              style="
+                font-size: 2.5rem;
+                color: #b7dbff;
+                background-color: #00002e;
+                padding: 8px 19px;
+                border-radius: 50%;
+              "
+            ></i>
+            <p id="experiencia-cobol-titulo" class="experiencia-titulo">
+              COBOL / Mainframe
+            </p>
+            <p id="experiencia-cobol-texto">
+              Especializado en desarrollo y mantenimiento de sistemas críticos
+              empresariales mediante COBOL. Experiencia en programación
+              estructurada para sistemas mainframe, trabajando con JCL, DB2 y
+              VSAM para aplicaciones bancarias y financieras. Desarrollo de
+              programas batch para procesamiento de transacciones y gestión de
+              archivos en entornos de alto volumen. Conocimiento en CICS para
+              aplicaciones transaccionales.
+            </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">COBOL</span>
+              <span class="badge text-bg-primary">JCL</span>
+              <span class="badge text-bg-primary">DB2</span>
+              <span class="badge text-bg-primary">VSAM</span>
             </div>
           </div>
-        </div>
 
-        <!-- Tarjeta de GitHub -->
-        <div class="col-12 col-md-6 col-lg-5">
-          <div class="card recursos-card h-100 shadow-sm">
-            <div class="card-body text-center p-4">
-              <div class="recursos-icono mb-3">
-                <i class="fab fa-github fa-3x" style="color: #24292e"></i>
-              </div>
-              <h3 class="card-title">Perfil GitHub</h3>
-              <p id="github-texto" class="card-text">
-                Explora mis proyectos, contribuciones y repositorios públicos.
-              </p>
-              <a href="https://github.com/JosanFM" class="btn btn-outline-dark mt-3" target="_blank">
-                <i id="github-boton" class="bi bi-github me-2"></i>
-              </a>
+          <!--Desarrollo Web-->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p id="experiencia1-titulo" class="experiencia-titulo">
+              Desarrollo web
+            </p>
+            <p id="experiencia1-texto">
+              Participé en el desarrollo de una plataforma web completamente
+              funcional y responsive para una empresa externa, destinada al
+              control de visitas y formaciones en distintas sedes. Trabajé en un
+              equipo multidisciplinario utilizando metodologías ágiles (Scrum
+              con sprints), gestionando tareas mediante Trello y utilizando
+              Git/GitHub para el control de versiones. El frontend fue
+              desarrollado con React, Vite y Bootstrap, mientras que el backend
+              y la base de datos se implementaron con Supabase y PostgreSQL.
+            </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">HTML</span>
+              <span class="badge text-bg-primary">CSS</span>
+              <span class="badge text-bg-primary">JavaScript</span>
+              <span class="badge text-bg-primary">React</span>
+              <span class="badge text-bg-primary">Supabase</span>
+            </div>
+          </div>
+
+          <!--desarrollo móvil-->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-phone"></i>
+            <!-- Icono básico -->
+            <p id="experiencia2-titulo" class="experiencia-titulo">
+              Desarrollo Móvil
+            </p>
+            <p id="experiencia2-texto">
+              Desarrollé de manera independiente una aplicación móvil
+              personalizada para un aficionado al cine, con funcionalidades
+              clave como búsqueda intuitiva de próximos estrenos, películas
+              populares y favoritas. Llevé a cabo todo el ciclo de desarrollo en
+              solitario: desde el análisis de requerimientos hasta el despliegue
+              final, implementando la base de datos Isar, el frontend adaptativo
+              y la integración con APIs externas. Mediante un proceso continuo
+              de feedback con el cliente a través de reuniones periódicas,
+              ajusté la aplicación a sus necesidades específicas, y hasta hoy
+              sigo encargándome de su mantenimiento y mejora continua.
+            </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Flutter</span>
+              <span class="badge text-bg-primary">Dart</span>
+              <span class="badge text-bg-primary">Isar</span>
+              <span class="badge text-bg-primary">API</span>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!--Proyectos-->
-  <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
-    <h2 id="proyectos-titulo" class="seccion-titulo texto-negro">
-      Mis proyectos
-    </h2>
-    <h3 id="proyectos-subtitulo" class="seccion-descripcion">
-      Estos son algunos de los proyectos que he creado recientemente...
-    </h3>
-    
-    <!-- Proyectos de Desarrollo Web y Mobile -->
-    <div class="container text-center proyectos-contenedor mb-5">
-      <h3 class="seccion-titulo texto-negro mb-4" style="font-size: 2.5rem;">
-        Desarrollo Web y Mobile
-      </h3>
-      <div class="row">
-        <!--Proyecto 1 - Gestión de sedes-->
-        <div class="col-12 col-md-6 col-lg-6">
-          <div class="proyecto-grande">
-            <video autoplay muted loop playsinline>
-              <source src="videos/grabacion_control_de_sedes.mp4" type="video/mp4">
-              <source src="videos/grabacion_control_de_sedes.mp4" type="video/webm">
-              <img src="videos/grabacion_control_de_sedes.mp4" alt="Registro" />
-            </video>
-            <div class="overlay">
-              <p id="proyecto1">Gestión de sedes</p>
-              <div class="iconos-contenedor">
-                <a href="https://gestion-visitas-y-formaciones.vercel.app/" target="_blank" rel="nooener noreferrer">
-                  <i class="bi bi-globe2"></i>
-                </a>
-                <a href="https://github.com/JosanFM/GestionVisitasyFormaciones" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-github"></i>
+    <!-- Sección CV y GitHub (recursos) -->
+    <section class="recursos seccion-clara">
+      <div class="container text-center">
+        <h2 id="recursos-titulo" class="seccion-titulo texto-negro">
+          Recursos Profesionales
+        </h2>
+        <p id="recursos-texto" class="seccion-texto mb-5">
+          Accede a mi currículum y perfil de GitHub para conocer más sobre mi
+          trabajo.
+        </p>
+
+        <div class="row justify-content-center">
+          <!-- Tarjeta del CV -->
+          <div class="col-12 col-md-6 col-lg-5 mb-4 mb-lg-0">
+            <div class="card recursos-card h-100 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="recursos-icono mb-3">
+                  <i class="fas fa-file-pdf fa-3x" style="color: #e74a3b"></i>
+                </div>
+                <h3 id="cv-titulo" class="card-title">Currículum Vitae</h3>
+                <p id="cv-texto" class="card-text">
+                  Descarga mi CV completo con toda mi experiencia, formación y
+                  habilidades.
+                </p>
+                <a
+                  href="docs/CV_Jose_Antonio_Fernandez_Martin.pdf"
+                  class="btn btn-outline-dark mt-3"
+                  download="CV_José_Antonio_Fernández.pdf"
+                  id="descargar-cv"
+                >
+                  <i id="cv-icono" class="bi bi-download me-2"></i>
+                  <span id="cv-texto-boton">Descargar CV</span>
                 </a>
               </div>
             </div>
           </div>
-          <div class="tech-stack mt-3">
-            <span class="tech-badge">React</span>
-            <span class="tech-badge">Vite</span>
-            <span class="tech-badge">Bootstrap</span>
-            <span class="tech-badge">Supabase</span>
-            <span class="tech-badge">PostgreSQL</span>
-          </div>
-        </div>
 
-        <!--Proyecto 2 - Filmora-->
-        <div class="col-12 col-md-6 col-lg-6">
-          <div class="proyecto-grande">
-            <img src="imagenes/home_filmora.png" alt="Filmora" />
-            <div class="overlay">
-              <p id="proyecto2">Filmora</p>
-              <div class="iconos-contenedor">
-                <a href="https://appetize.io/embed/b_qtxaafytfk6fgsmgn2xeulljze" target="_blank" rel="nooener noreferrer">
-                  <i class="bi bi-globe2"></i>
-                </a>
-                <a href="https://github.com/JosanFM/Filmora" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-github"></i>
+          <!-- Tarjeta de GitHub -->
+          <div class="col-12 col-md-6 col-lg-5">
+            <div class="card recursos-card h-100 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="recursos-icono mb-3">
+                  <i class="fab fa-github fa-3x" style="color: #24292e"></i>
+                </div>
+                <h3 class="card-title">Perfil GitHub</h3>
+                <p id="github-texto" class="card-text">
+                  Explora mis proyectos, contribuciones y repositorios públicos.
+                </p>
+                <a
+                  href="https://github.com/JosanFM"
+                  class="btn btn-outline-dark mt-3"
+                  target="_blank"
+                >
+                  <i id="github-boton" class="bi bi-github me-2"></i>
                 </a>
               </div>
             </div>
-          </div>
-          <div class="tech-stack mt-3">
-            <span class="tech-badge">Flutter</span>
-            <span class="tech-badge">Dart</span>
-            <span class="tech-badge">Isar</span>
-            <span class="tech-badge">API</span>
-          </div>
-        </div>
-
-        <!--Proyecto 3 - Gestión de inventario-->
-        <div class="col-12 col-md-6 col-lg-6">
-          <div class="proyecto-grande">
-            <img src="imagenes/gestion_inventario.png" alt="Gestión de inventario" />
-            <div class="overlay">
-              <p id="proyecto3">Gestión de inventario</p>
-              <div class="iconos-contenedor">
-                <a href="https://gestion-inventario-three.vercel.app/" target="_blank" rel="nooener noreferrer">
-                  <i class="bi bi-globe2"></i>
-                </a>
-                <a href="https://github.com/JosanFM/Gestion_Inventario" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="tech-stack mt-3">
-            <span class="tech-badge">React</span>
-            <span class="tech-badge">JavaScript</span>
-            <span class="tech-badge">CSS</span>
-          </div>
-        </div>
-
-        <!--Proyecto 4 - Registro de usuario-->
-        <div class="col-12 col-md-6 col-lg-6">
-          <div class="proyecto-grande">
-            <video autoplay muted loop playsinline>
-              <source src="videos/grabacion_registro_usuario_flutter.mp4" type="video/mp4">
-              <source src="videos/grabacion_registro_usuario_flutter.mp4" type="video/webm">
-              <img src="videos/grabacion_registro_usuario_flutter.mp4" alt="Registro" />
-            </video>
-            <div class="overlay">
-              <p id="proyecto4">Registro de usuario</p>
-              <div class="iconos-contenedor">
-                <a href="https://github.com/JosanFM/Formulario_de_usuario" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="tech-stack mt-3">
-            <span class="tech-badge">Flutter</span>
-            <span class="tech-badge">Dart</span>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Proyectos COBOL/Backend -->
-    <div class="container text-center proyectos-contenedor">
-      <h3 class="seccion-titulo texto-negro mb-4" style="font-size: 2.5rem;">
-        Proyectos COBOL
+    <!--Proyectos-->
+    <section
+      id="proyectos"
+      class="proyectos-recientes seccion-clara d-flex flex-column"
+    >
+      <h2 id="proyectos-titulo" class="seccion-titulo texto-negro">
+        Mis proyectos
+      </h2>
+      <h3 id="proyectos-subtitulo" class="seccion-descripcion">
+        Estos son algunos de los proyectos que he creado recientemente...
       </h3>
-      <div class="row">
-        <!--Proyecto COBOL 1-->
-        <div class="col-12 col-md-6 col-lg-6">
-          <div class="proyecto-grande">
-            <img src="imagenes/screenshots/HOLA_MUNDO.jpg" alt="Hola mundo en COBOL" />
-            <div class="overlay">
-              <p>Hola mundo!</p>
-              <p style="font-size: 1.5rem; margin-top: 10px;">COBOL</p>
-              <div class="iconos-contenedor">
-                <a href="https://github.com/JosanFM/HOLA_MUNDO_COBOL" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-github"></i>
-                </a>
+
+      <!-- Proyectos de Desarrollo Web y Mobile -->
+      <div class="container text-center proyectos-contenedor mb-5">
+        <h3 class="seccion-titulo texto-negro mb-4" style="font-size: 2.5rem">
+          Desarrollo Web y Mobile
+        </h3>
+        <div class="row">
+          <!--Proyecto 1 - Gestión de sedes-->
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="proyecto-grande">
+              <video autoplay muted loop playsinline>
+                <source
+                  src="videos/grabacion_control_de_sedes.mp4"
+                  type="video/mp4"
+                />
+                <source
+                  src="videos/grabacion_control_de_sedes.mp4"
+                  type="video/webm"
+                />
+                <img
+                  src="videos/grabacion_control_de_sedes.mp4"
+                  alt="Registro"
+                />
+              </video>
+              <div class="overlay">
+                <p id="proyecto1">Gestión de sedes</p>
+                <div class="iconos-contenedor">
+                  <a
+                    href="https://gestion-visitas-y-formaciones.vercel.app/"
+                    target="_blank"
+                    rel="nooener noreferrer"
+                  >
+                    <i class="bi bi-globe2"></i>
+                  </a>
+                  <a
+                    href="https://github.com/JosanFM/GestionVisitasyFormaciones"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
               </div>
             </div>
+            <div class="tech-stack mt-3">
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">Vite</span>
+              <span class="tech-badge">Bootstrap</span>
+              <span class="tech-badge">Supabase</span>
+              <span class="tech-badge">PostgreSQL</span>
+            </div>
           </div>
-          <div class="tech-stack mt-3">
-            <span class="tech-badge">COBOL</span>
-            <span class="tech-badge">JCL</span>
+
+          <!--Proyecto 2 - Filmora-->
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="proyecto-grande">
+              <img src="imagenes/home_filmora.png" alt="Filmora" />
+              <div class="overlay">
+                <p id="proyecto2">Filmora</p>
+                <div class="iconos-contenedor">
+                  <a
+                    href="https://appetize.io/embed/b_qtxaafytfk6fgsmgn2xeulljze"
+                    target="_blank"
+                    rel="nooener noreferrer"
+                  >
+                    <i class="bi bi-globe2"></i>
+                  </a>
+                  <a
+                    href="https://github.com/JosanFM/Filmora"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="tech-stack mt-3">
+              <span class="tech-badge">Flutter</span>
+              <span class="tech-badge">Dart</span>
+              <span class="tech-badge">Isar</span>
+              <span class="tech-badge">API</span>
+            </div>
+          </div>
+
+          <!--Proyecto 3 - Gestión de inventario-->
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="proyecto-grande">
+              <img
+                src="imagenes/gestion_inventario.png"
+                alt="Gestión de inventario"
+              />
+              <div class="overlay">
+                <p id="proyecto3">Gestión de inventario</p>
+                <div class="iconos-contenedor">
+                  <a
+                    href="https://gestion-inventario-three.vercel.app/"
+                    target="_blank"
+                    rel="nooener noreferrer"
+                  >
+                    <i class="bi bi-globe2"></i>
+                  </a>
+                  <a
+                    href="https://github.com/JosanFM/Gestion_Inventario"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="tech-stack mt-3">
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">CSS</span>
+            </div>
+          </div>
+
+          <!--Proyecto 4 - Registro de usuario-->
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="proyecto-grande">
+              <video autoplay muted loop playsinline>
+                <source
+                  src="videos/grabacion_registro_usuario_flutter.mp4"
+                  type="video/mp4"
+                />
+                <source
+                  src="videos/grabacion_registro_usuario_flutter.mp4"
+                  type="video/webm"
+                />
+                <img
+                  src="videos/grabacion_registro_usuario_flutter.mp4"
+                  alt="Registro"
+                />
+              </video>
+              <div class="overlay">
+                <p id="proyecto4">Registro de usuario</p>
+                <div class="iconos-contenedor">
+                  <a
+                    href="https://github.com/JosanFM/Formulario_de_usuario"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="tech-stack mt-3">
+              <span class="tech-badge">Flutter</span>
+              <span class="tech-badge">Dart</span>
+            </div>
           </div>
         </div>
-                <!--Proyecto COBOL 2-->
-                <div class="col-12 col-md-6 col-lg-6">
-                  <div class="proyecto-grande">
-                    <img src="imagenes/screenshots/fechayhora.png" alt="Hola mundo en COBOL" />
-                    <div class="overlay">
-                      <p>Fecha y hora</p>
-                      <p style="font-size: 1.5rem; margin-top: 10px;">Este programa coge fecha y hora del sistema y lo muestra.</p>
-                      <div class="iconos-contenedor">
-                        <a href="https://github.com/JosanFM/FECHA_Y_HORA_COBOL" target="_blank" rel="noopener noreferrer">
-                          <i class="bi bi-github"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tech-stack mt-3">
-                    <span class="tech-badge">COBOL</span>
-                    <span class="tech-badge">JCL</span>
-                  </div>
-                </div>   
+      </div>
 
-        <!-- 
+      <!-- Proyectos COBOL/Backend -->
+      <div class="container text-center proyectos-contenedor">
+        <h3 class="seccion-titulo texto-negro mb-4" style="font-size: 2.5rem">
+          Proyectos COBOL
+        </h3>
+        <div class="row">
+          <!--Proyecto COBOL 1-->
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="proyecto-grande">
+              <img
+                src="imagenes/screenshots/HOLA_MUNDO.jpg"
+                alt="Hola mundo en COBOL"
+              />
+              <div class="overlay">
+                <p>Hola mundo!</p>
+                <p style="font-size: 1.5rem; margin-top: 10px">COBOL</p>
+                <div class="iconos-contenedor">
+                  <a
+                    href="https://github.com/JosanFM/HOLA_MUNDO_COBOL"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="tech-stack mt-3">
+              <span class="tech-badge">COBOL</span>
+              <span class="tech-badge">JCL</span>
+            </div>
+          </div>
+          <!--Proyecto COBOL 2-->
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="proyecto-grande">
+              <img
+                src="imagenes/screenshots/fechayhora.png"
+                alt="Hola mundo en COBOL"
+              />
+              <div class="overlay">
+                <p>Fecha y hora</p>
+                <p style="font-size: 1.5rem; margin-top: 10px">
+                  Este programa coge fecha y hora del sistema y lo muestra.
+                </p>
+                <div class="iconos-contenedor">
+                  <a
+                    href="https://github.com/JosanFM/FECHA_Y_HORA_COBOL"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="tech-stack mt-3">
+              <span class="tech-badge">COBOL</span>
+              <span class="tech-badge">JCL</span>
+            </div>
+          </div>
+          <!--Proyecto COBOL 3-->
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="proyecto-grande">
+              <img
+                src="imagenes/screenshots/datos_sysyn_1.png"
+                alt="Hola mundo en COBOL"
+              />
+              <div class="overlay">
+                <p>Fecha y hora</p>
+                <p style="font-size: 1.5rem; margin-top: 10px">
+                  Este programa toma datos por SYSIN y saca un listado.
+                </p>
+                <div class="iconos-contenedor">
+                  <a
+                    href="https://github.com/JosanFM/DATOS_SYSIN1_COBOL"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="tech-stack mt-3">
+              <span class="tech-badge">COBOL</span>
+              <span class="tech-badge">JCL</span>
+            </div>
+          </div>
+
+          <!-- 
         PROYECTO COBOL 2 - Crea más proyectos siguiendo esta estructura:
         
         <div class="col-12 col-md-6 col-lg-6">
@@ -664,397 +835,572 @@
         </div>
         -->
 
-        <!--Placeholder para más proyectos COBOL-->
-        <div class="col-12 col-md-6 col-lg-6">
-          <div class="placeholder-proyecto">
-            <i class="bi bi-code-slash" style="font-size: 3rem; color: #0a2463;"></i>
-            <p style="font-size: 1.2rem; color: #0a2463; margin-top: 20px;">Más proyectos COBOL próximamente</p>
+          <!--Placeholder para más proyectos COBOL-->
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="placeholder-proyecto">
+              <i
+                class="bi bi-code-slash"
+                style="font-size: 3rem; color: #0a2463"
+              ></i>
+              <p style="font-size: 1.2rem; color: #0a2463; margin-top: 20px">
+                Más proyectos COBOL próximamente
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <button class="btn btn-azul mt-5">
-      <a href="https://github.com/JosanFM?tab=repositories" target="_blank">
-        <span id="mas-proyectos" class="btn-text">Ver más proyectos</span>
-        <span class="btn-icon">→</span>
-      </a>
-    </button>
-  </section>
-
-  <!--Formaciones-->
-  <section id="formaciones" class="articulos justify-content-start">
-    <h2 id="formacion-titulo" class="seccion-titulo texto-negro">
-      Formación
-    </h2>
-    <div class="card">
-      <div id="formacion-titulo-tarjeta" class="card-header">
-        Más significativas:
-      </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-          Técnico Superior en Desarrollo de Aplicaciones Web (DAW) (2023 -
-          2025)
-        </li>
-        <li class="list-group-item">
-          Técnico Superior de Laboratorio Clínico y Biomédico (2016 - 2018)
-        </li>
-        <li class="list-group-item">Curso Desarrollador Python (2023).</li>
-        <li class="list-group-item">
-          Cursos Desarrollador Java - Completando conocimientos impartidos en
-          DAW (2024).
-        </li>
-        <li class="list-group-item">
-          Curso Git: gestión de proyectos y trabajo en equipo con GitHub
-          (2024)
-        </li>
-        <li class="list-group-item">
-          Master en React: ReactJS, Hooks, MERN, NodeJS, JWT (2025).
-        </li>
-        <li class="list-group-item">
-          Curso Desarrollador Flutter/Dart (2025).
-        </li>
-        <li class="list-group-item">
-          Curso Despliegues con Docker (2025).
-        </li>
-        <li class="list-group-item">
-          Curso Linux: manejo, comandos y shell scripting (2025).
-        </li>
-        <li class="list-group-item">
-          Curso de introducción a la programación de PLC- automatización
-          industrial (2025).
-        </li>
-      </ul>
-    </div>
-    <button class="btn btn-azul">
-      <a href="docs/CV_Jose_Antonio_Fernandez_Martin.pdf" download="CURRICULUM VITAE.pdf">
-        <span id="mas-formaciones" class="btn-text">Descargar CV para ver + formaciones</span>
-        <span class="bi bi-box-arrow-down"></span>
-      </a>
-    </button>
-  </section>
-
-  <!--Screenshot-->
-  <section class="capturas texto-blanco">
-    <h2 id="capturas-titulo" class="seccion-titulo">Screenshots</h2>
-    <h3 id="capturas-subtitulo" class="seccion-descripcion texto-blanco">
-      Algunas capturas de pantalla de mis proyectos, espero que os gusten...
-      <i class="bi bi-aspect-ratio"></i>
-    </h3>
-    <h5 id="capturas-consejo">( Pulsa la imagen para verla mejor 👌 )</h5>
-
-    <!-- Contenedor del Carrusel + Botones Externos -->
-    <div class="carousel-container d-flex align-items-center">
-      <!-- Botón Prev (Izquierda) -->
-      <button class="carousel-control-custom prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
+      <button class="btn btn-azul mt-5">
+        <a href="https://github.com/JosanFM?tab=repositories" target="_blank">
+          <span id="mas-proyectos" class="btn-text">Ver más proyectos</span>
+          <span class="btn-icon">→</span>
+        </a>
       </button>
+    </section>
 
-      <!-- Carrusel (Centro) -->
-      <div id="projectCarousel" class="carousel slide flex-grow-1" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <a href="imagenes/gestion_de_sedes.png" data-lightbox="proyectos" data-title="Proyecto 1">
-              <img src="imagenes/gestion_de_sedes.png" class="d-block w-100" alt="Proyecto 1" />
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a href="imagenes/screenshots/gestion_de_sedes2.png" data-lightbox="proyectos" data-title="Proyecto 2">
-              <img src="imagenes/screenshots/gestion_de_sedes2.png" class="d-block w-100" alt="Proyecto 2" />
-            </a>
-          </div>
-          <div class="carousel-item">
-              <a href="imagenes/screenshots/gestion_de_sedes3.png" data-lightbox="proyectos" data-title="Proyecto 2">
-                <img src="imagenes/screenshots/gestion_de_sedes3.png" class="d-block w-100" alt="Proyecto 3" />
-              </a>
-          </div>
-          <div class="carousel-item">
-              <a href="imagenes/screenshots/gestion_de_sedes4.png" data-lightbox="proyectos" data-title="Proyecto 2">
-                <img src="imagenes/screenshots/gestion_de_sedes4.png" class="d-block w-100" alt="Proyecto 3" />
-              </a>
-          </div>
-          <div class="carousel-item">
-              <a href="imagenes/screenshots/gestion_de_sedes5.png" data-lightbox="proyectos" data-title="Proyecto 2">
-                <img src="imagenes/screenshots/gestion_de_sedes5.png" class="d-block w-100" alt="Proyecto 3" />
-              </a>
-          </div>
-          <div class="carousel-item">
-              <a href="imagenes/screenshots/gestion_de_sedes6.png" data-lightbox="proyectos" data-title="Proyecto 2">
-                <img src="imagenes/screenshots/gestion_de_sedes6.png" class="d-block w-100" alt="Proyecto 3" />
-              </a>
-          </div>
-          <div class="carousel-item">
-              <a href="imagenes/screenshots/filmora2.png" data-lightbox="proyectos" data-title="Proyecto 2">
-                <img src="imagenes/screenshots/filmora2.png" class="d-block w-100" alt="Proyecto 3" />
-              </a>
-          </div>
-          <div class="carousel-item">
-              <a href="imagenes/screenshots/filmora3.png" data-lightbox="proyectos" data-title="Proyecto 2">
-                <img src="imagenes/screenshots/filmora3.png" class="d-block w-100" alt="Proyecto 3" />
-              </a>
-          </div>
-          <div class="carousel-item">
-              <a href="imagenes/screenshots/filmora4.png" data-lightbox="proyectos" data-title="Proyecto 2">
-                <img src="imagenes/screenshots/filmora4.png" class="d-block w-100" alt="Proyecto 3" />
-              </a>
-          </div>
-          <div class="carousel-item">
-              <a href="imagenes/screenshots/filmora5.png" data-lightbox="proyectos" data-title="Proyecto 2">
-                <img src="imagenes/screenshots/filmora5.png" class="d-block w-100" alt="Proyecto 3" />
-              </a>
-          </div>
-          <div class="carousel-item">
-              <a href="imagenes/gestion_inventario.png" data-lightbox="proyectos" data-title="Proyecto 2">
-                <img src="imagenes/gestion_inventario.png" class="d-block w-100" alt="Proyecto 3" />
-              </a>
-          </div>
-          <div class="carousel-item">
-              <a href="imagenes/screenshots/gestion_de_inventario2.png" data-lightbox="proyectos" data-title="Proyecto 2">
-                <img src="imagenes/screenshots/gestion_de_inventario2.png" class="d-block w-100" alt="Proyecto 3" />
-              </a>
-          </div>
-          <div class="carousel-item">
-              <a href="imagenes/screenshots/gestion_de_inventario3.png" data-lightbox="proyectos" data-title="Proyecto 2">
-                <img src="imagenes/screenshots/gestion_de_inventario3.png" class="d-block w-100" alt="Proyecto 3" />
-              </a>
-          </div>
+    <!--Formaciones-->
+    <section id="formaciones" class="articulos justify-content-start">
+      <h2 id="formacion-titulo" class="seccion-titulo texto-negro">
+        Formación
+      </h2>
+      <div class="card">
+        <div id="formacion-titulo-tarjeta" class="card-header">
+          Más significativas:
         </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            Técnico Superior en Desarrollo de Aplicaciones Web (DAW) (2023 -
+            2025)
+          </li>
+          <li class="list-group-item">
+            Técnico Superior de Laboratorio Clínico y Biomédico (2016 - 2018)
+          </li>
+          <li class="list-group-item">Curso Desarrollador Python (2023).</li>
+          <li class="list-group-item">
+            Cursos Desarrollador Java - Completando conocimientos impartidos en
+            DAW (2024).
+          </li>
+          <li class="list-group-item">
+            Curso Git: gestión de proyectos y trabajo en equipo con GitHub
+            (2024)
+          </li>
+          <li class="list-group-item">
+            Master en React: ReactJS, Hooks, MERN, NodeJS, JWT (2025).
+          </li>
+          <li class="list-group-item">
+            Curso Desarrollador Flutter/Dart (2025).
+          </li>
+          <li class="list-group-item">Curso Despliegues con Docker (2025).</li>
+          <li class="list-group-item">
+            Curso Linux: manejo, comandos y shell scripting (2025).
+          </li>
+          <li class="list-group-item">
+            Curso de introducción a la programación de PLC- automatización
+            industrial (2025).
+          </li>
+        </ul>
       </div>
-
-      <!-- Botón Next (Derecha) -->
-      <button class="carousel-control-custom next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
+      <button class="btn btn-azul">
+        <a
+          href="docs/CV_Jose_Antonio_Fernandez_Martin.pdf"
+          download="CURRICULUM VITAE.pdf"
+        >
+          <span id="mas-formaciones" class="btn-text"
+            >Descargar CV para ver + formaciones</span
+          >
+          <span class="bi bi-box-arrow-down"></span>
+        </a>
       </button>
-    </div>
-  </section>
+    </section>
 
-  <!--Contacto-->
-  <section id="contacto" class="contacto seccion-oscura py-5" style="background-color: black; scroll-margin-top: 150px">
-    <div class="container rectangulo text-center">
-      <div class="row flex-column align-items-center text-center">
-        <div class="col-12 col-md-4 mb-3">
-          <h3 id="contacto-titulo" class="seccion-titulo">
-            Trabajemos juntos
-          </h3>
-        </div>
-        <div class="col-12 col-md-4 mb-3">
-          <p id="contacto-texto" class="descripcion" style="font-size: 1.5rem">
-            Contáctame para colaborar en proyectos de desarrollo de software.
-            Transformo ideas en soluciones escalables, ya sea como freelance o
-            para integrarme en proyectos empresariales complejos.
-          </p>
-        </div>
-        <div class="col-12 col-md-4">
-          <div class="d-flex flex-column flex-md-row justify-content-center gap-2">
-            <div class="d-flex flex-column align-items-center gap-3 mt-4">
-              <a href="tel:+34622941389" class="btn btn-contacto btn-llamar"
-                style="background-color: rgb(1, 217, 245); width: 90%">
-                <i class="bi bi-telephone-fill me-2"></i><span id="contacto-llamar">Llamar</span>
-              </a>
-              <a href="https://wa.me/34622941389" target="_blank" class="btn btn-contacto btn-whatsapp"
-                style="background-color: #25d366; width: 90%">
-                <i class="bi bi-whatsapp me-2"></i><span id="contacto-wa">WhatsApp</span>
-              </a>
-              <a href="mailto:josan1997fernandez@gmail.com" class="btn btn-contacto btn-correo"
-                style="background-color: rgb(185, 130, 58); width: 90%">
-                <i class="bi bi-envelope-fill me-2"></i><span id="contacto-correo">Correo</span>
-              </a>
-              <div class="copiar-correo d-flex align-items-center justify-content-center gap-2">
-                <div id="correoTexto" class="bg-light text-dark px-4 py-2 rounded">
-                  josan1997fernandez@gmail.com
-                </div>
-                <button onclick="copiarAlPortapapeles()" class="btn btn-sm btn-outline-light" title="Copiar correo">
-                  <i class="bi bi-clipboard"></i>
-                </button>
+    <!--Screenshot-->
+    <section class="capturas texto-blanco">
+      <h2 id="capturas-titulo" class="seccion-titulo">Screenshots</h2>
+      <h3 id="capturas-subtitulo" class="seccion-descripcion texto-blanco">
+        Algunas capturas de pantalla de mis proyectos, espero que os gusten...
+        <i class="bi bi-aspect-ratio"></i>
+      </h3>
+      <h5 id="capturas-consejo">( Pulsa la imagen para verla mejor 👌 )</h5>
 
-                <div id="copy-toast" class="confirmacion-copiado">
-                  <i class="bi bi-clipboard-check"></i>
-                  <span>Copiado al portapapeles</span>
+      <!-- Contenedor del Carrusel + Botones Externos -->
+      <div class="carousel-container d-flex align-items-center">
+        <!-- Botón Prev (Izquierda) -->
+        <button
+          class="carousel-control-custom prev"
+          type="button"
+          data-bs-target="#projectCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <!-- Carrusel (Centro) -->
+        <div
+          id="projectCarousel"
+          class="carousel slide flex-grow-1"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a
+                href="imagenes/gestion_de_sedes.png"
+                data-lightbox="proyectos"
+                data-title="Proyecto 1"
+              >
+                <img
+                  src="imagenes/gestion_de_sedes.png"
+                  class="d-block w-100"
+                  alt="Proyecto 1"
+                />
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a
+                href="imagenes/screenshots/gestion_de_sedes2.png"
+                data-lightbox="proyectos"
+                data-title="Proyecto 2"
+              >
+                <img
+                  src="imagenes/screenshots/gestion_de_sedes2.png"
+                  class="d-block w-100"
+                  alt="Proyecto 2"
+                />
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a
+                href="imagenes/screenshots/gestion_de_sedes3.png"
+                data-lightbox="proyectos"
+                data-title="Proyecto 2"
+              >
+                <img
+                  src="imagenes/screenshots/gestion_de_sedes3.png"
+                  class="d-block w-100"
+                  alt="Proyecto 3"
+                />
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a
+                href="imagenes/screenshots/gestion_de_sedes4.png"
+                data-lightbox="proyectos"
+                data-title="Proyecto 2"
+              >
+                <img
+                  src="imagenes/screenshots/gestion_de_sedes4.png"
+                  class="d-block w-100"
+                  alt="Proyecto 3"
+                />
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a
+                href="imagenes/screenshots/gestion_de_sedes5.png"
+                data-lightbox="proyectos"
+                data-title="Proyecto 2"
+              >
+                <img
+                  src="imagenes/screenshots/gestion_de_sedes5.png"
+                  class="d-block w-100"
+                  alt="Proyecto 3"
+                />
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a
+                href="imagenes/screenshots/gestion_de_sedes6.png"
+                data-lightbox="proyectos"
+                data-title="Proyecto 2"
+              >
+                <img
+                  src="imagenes/screenshots/gestion_de_sedes6.png"
+                  class="d-block w-100"
+                  alt="Proyecto 3"
+                />
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a
+                href="imagenes/screenshots/filmora2.png"
+                data-lightbox="proyectos"
+                data-title="Proyecto 2"
+              >
+                <img
+                  src="imagenes/screenshots/filmora2.png"
+                  class="d-block w-100"
+                  alt="Proyecto 3"
+                />
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a
+                href="imagenes/screenshots/filmora3.png"
+                data-lightbox="proyectos"
+                data-title="Proyecto 2"
+              >
+                <img
+                  src="imagenes/screenshots/filmora3.png"
+                  class="d-block w-100"
+                  alt="Proyecto 3"
+                />
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a
+                href="imagenes/screenshots/filmora4.png"
+                data-lightbox="proyectos"
+                data-title="Proyecto 2"
+              >
+                <img
+                  src="imagenes/screenshots/filmora4.png"
+                  class="d-block w-100"
+                  alt="Proyecto 3"
+                />
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a
+                href="imagenes/screenshots/filmora5.png"
+                data-lightbox="proyectos"
+                data-title="Proyecto 2"
+              >
+                <img
+                  src="imagenes/screenshots/filmora5.png"
+                  class="d-block w-100"
+                  alt="Proyecto 3"
+                />
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a
+                href="imagenes/gestion_inventario.png"
+                data-lightbox="proyectos"
+                data-title="Proyecto 2"
+              >
+                <img
+                  src="imagenes/gestion_inventario.png"
+                  class="d-block w-100"
+                  alt="Proyecto 3"
+                />
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a
+                href="imagenes/screenshots/gestion_de_inventario2.png"
+                data-lightbox="proyectos"
+                data-title="Proyecto 2"
+              >
+                <img
+                  src="imagenes/screenshots/gestion_de_inventario2.png"
+                  class="d-block w-100"
+                  alt="Proyecto 3"
+                />
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a
+                href="imagenes/screenshots/gestion_de_inventario3.png"
+                data-lightbox="proyectos"
+                data-title="Proyecto 2"
+              >
+                <img
+                  src="imagenes/screenshots/gestion_de_inventario3.png"
+                  class="d-block w-100"
+                  alt="Proyecto 3"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Botón Next (Derecha) -->
+        <button
+          class="carousel-control-custom next"
+          type="button"
+          data-bs-target="#projectCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!--Contacto-->
+    <section
+      id="contacto"
+      class="contacto seccion-oscura py-5"
+      style="background-color: black; scroll-margin-top: 150px"
+    >
+      <div class="container rectangulo text-center">
+        <div class="row flex-column align-items-center text-center">
+          <div class="col-12 col-md-4 mb-3">
+            <h3 id="contacto-titulo" class="seccion-titulo">
+              Trabajemos juntos
+            </h3>
+          </div>
+          <div class="col-12 col-md-4 mb-3">
+            <p
+              id="contacto-texto"
+              class="descripcion"
+              style="font-size: 1.5rem"
+            >
+              Contáctame para colaborar en proyectos de desarrollo de software.
+              Transformo ideas en soluciones escalables, ya sea como freelance o
+              para integrarme en proyectos empresariales complejos.
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <div
+              class="d-flex flex-column flex-md-row justify-content-center gap-2"
+            >
+              <div class="d-flex flex-column align-items-center gap-3 mt-4">
+                <a
+                  href="tel:+34622941389"
+                  class="btn btn-contacto btn-llamar"
+                  style="background-color: rgb(1, 217, 245); width: 90%"
+                >
+                  <i class="bi bi-telephone-fill me-2"></i
+                  ><span id="contacto-llamar">Llamar</span>
+                </a>
+                <a
+                  href="https://wa.me/34622941389"
+                  target="_blank"
+                  class="btn btn-contacto btn-whatsapp"
+                  style="background-color: #25d366; width: 90%"
+                >
+                  <i class="bi bi-whatsapp me-2"></i
+                  ><span id="contacto-wa">WhatsApp</span>
+                </a>
+                <a
+                  href="mailto:josan1997fernandez@gmail.com"
+                  class="btn btn-contacto btn-correo"
+                  style="background-color: rgb(185, 130, 58); width: 90%"
+                >
+                  <i class="bi bi-envelope-fill me-2"></i
+                  ><span id="contacto-correo">Correo</span>
+                </a>
+                <div
+                  class="copiar-correo d-flex align-items-center justify-content-center gap-2"
+                >
+                  <div
+                    id="correoTexto"
+                    class="bg-light text-dark px-4 py-2 rounded"
+                  >
+                    josan1997fernandez@gmail.com
+                  </div>
+                  <button
+                    onclick="copiarAlPortapapeles()"
+                    class="btn btn-sm btn-outline-light"
+                    title="Copiar correo"
+                  >
+                    <i class="bi bi-clipboard"></i>
+                  </button>
+
+                  <div id="copy-toast" class="confirmacion-copiado">
+                    <i class="bi bi-clipboard-check"></i>
+                    <span>Copiado al portapapeles</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!--Pie de pagina (footer)-->
-  <footer class="d-flex flex-column align-items-center justify-content-center">
-    <img src="imagenes/icono-blanco.svg" alt="Logo del Portafolio" class="footer-logo" />
-    <p id="footer-texto1" class="footer-texto text-center">
-      Aprendo, creo y desarrollo todos los días.
-    </p>
-    <p id="footer-texto2" class="footer-texto text-center">
-      Vamos a crear y desarrollar proyectos juntos.
-    </p>
-    <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
-      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-twitter-x"></i>
-      </a>
-      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-github"></i>
-      </a>
-      <a href="www.linkedin.com/in/josé-antonio-fernández-martín-952579234" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-linkedin"></i>
-      </a>
-      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-instagram"></i>
-      </a>
-      <a href="mailto:josan1997fernandez@gmail.com" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-envelope"></i>
-      </a>
-    </div>
-    <div id="derechos" class="derechos-de-autor">
-      Creado por José Antonio Fernández Martín (2025) <span>&#169;</span>
-    </div>
-  </footer>
+    <!--Pie de pagina (footer)-->
+    <footer
+      class="d-flex flex-column align-items-center justify-content-center"
+    >
+      <img
+        src="imagenes/icono-blanco.svg"
+        alt="Logo del Portafolio"
+        class="footer-logo"
+      />
+      <p id="footer-texto1" class="footer-texto text-center">
+        Aprendo, creo y desarrollo todos los días.
+      </p>
+      <p id="footer-texto2" class="footer-texto text-center">
+        Vamos a crear y desarrollar proyectos juntos.
+      </p>
+      <div
+        class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center"
+      >
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-twitter-x"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
+        </a>
+        <a
+          href="www.linkedin.com/in/josé-antonio-fernández-martín-952579234"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a
+          href="mailto:josan1997fernandez@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-envelope"></i>
+        </a>
+      </div>
+      <div id="derechos" class="derechos-de-autor">
+        Creado por José Antonio Fernández Martín (2025) <span>&#169;</span>
+      </div>
+    </footer>
 
-  <!--Link que se debe colocar al final, de bootstrap para JS-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-    crossorigin="anonymous"></script>
-  <!-- Lightbox2 JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <!--Link que se debe colocar al final, de bootstrap para JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Lightbox2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 
-  <script>
-    // Efecto al hacer scroll
-    window.addEventListener("scroll", function () {
-      const navbar = document.querySelector(".navbar");
-      if (window.scrollY > 50) {
-        navbar.classList.add("scrolled");
-      } else {
-        navbar.classList.remove("scrolled");
+    <script>
+      // Efecto al hacer scroll
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
+
+    <!--Efecto para underline abajo de la sección en la que estes-->
+    <script>
+      const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+        target: "#navbarContent",
+        offset: 100,
+      });
+    </script>
+
+    <script>
+      function copiarCorreo() {
+        const correo = document.getElementById("correoTexto").innerText;
+        navigator.clipboard
+          .writeText(correo)
+          .then(() => {
+            alert("Correo copiado al portapapeles");
+          })
+          .catch((err) => {
+            console.error("Error al copiar: ", err);
+          });
       }
-    });
-  </script>
+    </script>
 
-  <!--Efecto para underline abajo de la sección en la que estes-->
-  <script>
-    const scrollSpy = new bootstrap.ScrollSpy(document.body, {
-      target: "#navbarContent",
-      offset: 100,
-    });
-  </script>
-
-  <script>
-    function copiarCorreo() {
-      const correo = document.getElementById("correoTexto").innerText;
-      navigator.clipboard
-        .writeText(correo)
-        .then(() => {
-          alert("Correo copiado al portapapeles");
-        })
-        .catch((err) => {
-          console.error("Error al copiar: ", err);
+    <script>
+      function copiarAlPortapapeles(texto) {
+        navigator.clipboard.writeText(texto).then(() => {
+          const toast = document.getElementById("copy-toast");
+          toast.style.display = "block";
+          setTimeout(() => {
+            toast.style.display = "none";
+          }, 2000); // Se oculta después de 2 segundos
         });
-    }
-  </script>
-
-  <script>
-    function copiarAlPortapapeles(texto) {
-      navigator.clipboard.writeText(texto).then(() => {
-        const toast = document.getElementById("copy-toast");
-        toast.style.display = "block";
-        setTimeout(() => {
-          toast.style.display = "none";
-        }, 2000); // Se oculta después de 2 segundos
-      });
-    }
-  </script>
-
-  <script>
-    let currentLang = "es";
-
-    // Función para cargar las traducciones
-    async function loadTranslations() {
-      try {
-        const response = await fetch("translations.json");
-        if (!response.ok) throw new Error("Error cargando traducciones");
-        return await response.json();
-      } catch (error) {
-        console.error("Error:", error);
-        return null;
       }
-    }
+    </script>
 
-    // Función para aplicar traducciones y actualizar el botón
-    async function applyTranslations(lang) {
-      const translations = await loadTranslations();
-      if (!translations) return;
+    <script>
+      let currentLang = "es";
 
-      // 1. Actualizar todos los textos de la página
-      for (const [key, text] of Object.entries(translations[lang])) {
-        const element = document.getElementById(key);
-        if (element) element.textContent = text;
+      // Función para cargar las traducciones
+      async function loadTranslations() {
+        try {
+          const response = await fetch("translations.json");
+          if (!response.ok) throw new Error("Error cargando traducciones");
+          return await response.json();
+        } catch (error) {
+          console.error("Error:", error);
+          return null;
+        }
       }
 
-      // 2. Actualizar el texto del botón correctamente
-      const languageButton = document.getElementById("languageToggle");
-      if (lang === "es") {
-        languageButton.innerHTML = '<span id="languageText">English</span>';
-      } else {
-        languageButton.innerHTML = '<span id="languageText">Español</span>';
-      }
-    }
+      // Función para aplicar traducciones y actualizar el botón
+      async function applyTranslations(lang) {
+        const translations = await loadTranslations();
+        if (!translations) return;
 
-    // Evento para el botón de cambio de idioma
-    document
-      .getElementById("languageToggle")
-      .addEventListener("click", async () => {
-        currentLang = currentLang === "es" ? "en" : "es";
+        // 1. Actualizar todos los textos de la página
+        for (const [key, text] of Object.entries(translations[lang])) {
+          const element = document.getElementById(key);
+          if (element) element.textContent = text;
+        }
+
+        // 2. Actualizar el texto del botón correctamente
+        const languageButton = document.getElementById("languageToggle");
+        if (lang === "es") {
+          languageButton.innerHTML = '<span id="languageText">English</span>';
+        } else {
+          languageButton.innerHTML = '<span id="languageText">Español</span>';
+        }
+      }
+
+      // Evento para el botón de cambio de idioma
+      document
+        .getElementById("languageToggle")
+        .addEventListener("click", async () => {
+          currentLang = currentLang === "es" ? "en" : "es";
+          await applyTranslations(currentLang);
+          localStorage.setItem("portfolioLanguage", currentLang);
+        });
+
+      // Al cargar la página
+      document.addEventListener("DOMContentLoaded", async () => {
+        const savedLang = localStorage.getItem("portfolioLanguage") || "es";
+        currentLang = savedLang;
         await applyTranslations(currentLang);
-        localStorage.setItem("portfolioLanguage", currentLang);
       });
 
-    // Al cargar la página
-    document.addEventListener("DOMContentLoaded", async () => {
-      const savedLang = localStorage.getItem("portfolioLanguage") || "es";
-      currentLang = savedLang;
-      await applyTranslations(currentLang);
-    });
+      // mostrar mensaje de descarga
+      document
+        .getElementById("descargar-cv")
+        .addEventListener("click", function (e) {
+          // Prevenir el comportamiento por defecto para controlar el flujo
+          e.preventDefault();
 
-    // mostrar mensaje de descarga
-    document
-      .getElementById("descargar-cv")
-      .addEventListener("click", function (e) {
-        // Prevenir el comportamiento por defecto para controlar el flujo
-        e.preventDefault();
+          // Guardar referencia a los elementos del botón
+          const boton = this;
+          const icono = document.getElementById("cv-icono");
+          const texto = document.getElementById("cv-texto-boton");
 
-        // Guardar referencia a los elementos del botón
-        const boton = this;
-        const icono = document.getElementById("cv-icono");
-        const texto = document.getElementById("cv-texto-boton");
+          // Guardar el estado original
+          const claseOriginal = boton.className;
+          const iconoOriginal = icono.className;
+          const textoOriginal = texto.textContent;
 
-        // Guardar el estado original
-        const claseOriginal = boton.className;
-        const iconoOriginal = icono.className;
-        const textoOriginal = texto.textContent;
+          // Cambiar a estado "descargado"
+          boton.className = "btn btn-success mt-3";
+          icono.className = "bi bi-check2-circle me-2";
+          texto.textContent = "¡Descargado!";
 
-        // Cambiar a estado "descargado"
-        boton.className = "btn btn-success mt-3";
-        icono.className = "bi bi-check2-circle me-2";
-        texto.textContent = "¡Descargado!";
+          // Iniciar la descarga después de un pequeño retraso
+          setTimeout(() => {
+            // Crear un enlace temporal para la descarga
+            const link = document.createElement("a");
+            link.href = this.href;
+            link.download = this.download;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+          }, 100);
 
-        // Iniciar la descarga después de un pequeño retraso
-        setTimeout(() => {
-          // Crear un enlace temporal para la descarga
-          const link = document.createElement("a");
-          link.href = this.href;
-          link.download = this.download;
-          document.body.appendChild(link);
-          link.click();
-          document.body.removeChild(link);
-        }, 100);
-
-        // Volver al estado original después de 3 segundos
-        setTimeout(() => {
-          boton.className = claseOriginal;
-          icono.className = iconoOriginal;
-          texto.textContent = textoOriginal;
-        }, 3000);
-      });
-  </script>
-</body>
-
+          // Volver al estado original después de 3 segundos
+          setTimeout(() => {
+            boton.className = claseOriginal;
+            icono.className = iconoOriginal;
+            texto.textContent = textoOriginal;
+          }, 3000);
+        });
+    </script>
+  </body>
 </html>

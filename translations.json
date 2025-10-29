@@ -10,12 +10,12 @@
         "skills": "Habilidades",
         "experience": "Experiencia",
         "training":"Formación",
-        "frase-cabecera":"Desarrollo software transformando ideas en líneas de código.",
-        "frase-cabecera2":"Optimizo procesos productivos con tecnología.",
+        "frase-cabecera":"Especialista en COBOL/Mainframe y desarrollo web/mobile moderno.",
+        "frase-cabecera2":"De sistemas legacy críticos a cloud: JCL, DB2, CICS, React, AWS...",
         "home":"Inicio",
 
         "sobre-mi-titulo":"Un poco sobre mí",
-        "sobre-mi-texto":"Durante 6 años en la industria, descubrí el poder de la tecnología para revolucionar procesos. Hoy, como Técnico Superior en DAW, combino mi conocimiento del mundo físico con mi experiencia en desarrollo web y móvil para digitalizar ideas que resuelven problemas reales.",
+        "sobre-mi-texto":"Durante 6 años trabajé en entornos industriales centrados en la trazabilidad de productos y la optimización de procesos. Actualmente, como Técnico Superior en DAW, me he especializado en COBOL y Mainframe, desarrollando y manteniendo aplicaciones batch y transaccionales (JCL, DB2, VSAM y CICS), además de productos web y móviles. Entre mis últimos proyectos en COBOL destacan un validador de IBAN bancario, procesamiento de datos por SYSIN, generación de listados y manejo de fecha/hora. En el ámbito web, he creado plataformas con React, Vite, Bootstrap y Supabase. Mi foco es la calidad, el rendimiento y traducir procesos de negocio complejos a código fiable.",
         "sobre-mi-boton-contacto":"Contacto",
 
         "experiencia-titulo":"Experiencia",
@@ -44,6 +44,7 @@
         "proyecto5":"Gestión de inventario",
         "proyecto6":"Gestión de inventario",
         "mas-proyectos":"Ver más proyectos",
+        "mas-cobol":"Más proyectos COBOL próximamente",
        
         "formacion-titulo":"Formación",
         "formacion-titulo-tarjeta":"Más significativas:",
@@ -77,12 +78,12 @@
         "contact": "Contact",
         "skills": "Skills",
         "training":"Training",
-        "frase-cabecera":"I develop software by transforming ideas into lines of code.",
-        "frase-cabecera2":"I optimize production processes with technology.",
+        "frase-cabecera":"Specialist in COBOL/Mainframe and modern web/mobile development.",
+        "frase-cabecera2":"From critical legacy systems to the cloud: JCL, DB2, CICS, React, AWS...",
         "home":"Home",
 
         "sobre-mi-titulo":"A little about me",
-        "sobre-mi-texto":"During my 6 years in the industry, I discovered the power of technology to revolutionize processes. Today, as a DAW Technician, I combine my knowledge of the physical world with my experience in web and mobile development to digitize ideas that solve real problems.",
+        "sobre-mi-texto":"For six years, I worked in industrial environments focused on product traceability and process optimisation. Currently, as a Senior Technician at DAW, I specialise in COBOL and Mainframe, developing and maintaining batch and transactional applications (JCL, DB2, VSAM, and CICS), as well as web and mobile products. My latest COBOL projects include a bank IBAN validator, data processing by SYSIN, list generation, and date/time management. In the web sphere, I have created platforms with React, Vite, Bootstrap, and Supabase. My focus is on quality, performance, and translating complex business processes into reliable code.",
         "sobre-mi-boton-contacto":"Contact",
 
         "experiencia-titulo":"Experience",
@@ -112,6 +113,7 @@
         "proyecto5":"Inventory management",
         "proyecto6":"Inventory management",
         "mas-proyectos":"See more projects",
+        "mas-cobol":"More COBOL projects coming soon",
 
         "formacion-titulo":"Training",
         "formacion-titulo-tarjeta":"Most significant:",

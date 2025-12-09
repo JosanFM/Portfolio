@@ -41,8 +41,14 @@
         "proyecto2":"Filmora",
         "proyecto3":"Gestión de inventario",
         "proyecto4":"Usuario FLutter",
-        "proyecto5":"Gestión de inventario",
-        "proyecto6":"Gestión de inventario",
+
+        "proyecto-cobol1":"¡Hola mundo!",
+        "proyecto-cobol2":"Fecha y hora",
+        "proyecto-cobol3":"SYSIN1",
+        "proyecto-cobol4":"SYSIN2",
+        "proyecto-cobol5":"Calculadora letra DNI",
+        "proyecto-cobol6":"Comprobador de IBAN",
+        "proyecto-cobol7":"Leer y grabar en PS",
         "mas-proyectos":"Ver más proyectos",
         "mas-cobol":"Más proyectos COBOL próximamente",
        
@@ -110,8 +116,16 @@
         "proyecto2":"Filmora",
         "proyecto3":"Inventory management",
         "proyecto4":"Flutter User",
-        "proyecto5":"Inventory management",
-        "proyecto6":"Inventory management",
+
+        "proyecto-cobol1":"Hello World!",
+        "proyecto-cobol2":"Date and Time",
+        "proyecto-cobol3":"SYSIN1",
+        "proyecto-cobol4":"SYSIN2",
+        "proyecto-cobol5":"DNI letter calculator",
+        "proyecto-cobol6":"IBAN checker",
+        "proyecto-cobol7":"Read and write to PS",
+
+        
         "mas-proyectos":"See more projects",
         "mas-cobol":"More COBOL projects coming soon",
 

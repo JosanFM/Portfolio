@@ -11,7 +11,7 @@
         "experience": "Experiencia",
         "training":"Formación",
         "frase-cabecera":"Especialista en COBOL/Mainframe y desarrollo web/mobile moderno.",
-        "frase-cabecera2":"De sistemas legacy críticos a cloud: JCL, DB2, CICS, React, AWS...",
+        "frase-cabecera2":"De sistemas legacy críticos a tecnologías modernas y cloud: COBOL, JCL, DB2, CICS, Java, JavaScript, React, AWS...",
         "home":"Inicio",
 
         "sobre-mi-titulo":"Un poco sobre mí",
@@ -49,6 +49,7 @@
         "proyecto-cobol5":"Calculadora letra DNI",
         "proyecto-cobol6":"Comprobador de IBAN",
         "proyecto-cobol7":"Leer y grabar en PS",
+        "proyecto-cobol8":"Equivalencia de euros a pesetas",
         "mas-proyectos":"Ver más proyectos",
         "mas-cobol":"Más proyectos COBOL próximamente",
        
@@ -85,7 +86,7 @@
         "skills": "Skills",
         "training":"Training",
         "frase-cabecera":"Specialist in COBOL/Mainframe and modern web/mobile development.",
-        "frase-cabecera2":"From critical legacy systems to the cloud: JCL, DB2, CICS, React, AWS...",
+        "frase-cabecera2":"From critical legacy systems to modern and cloud technologies: COBOL, JCL, DB2, CICS, Java, JavaScript, React, AWS...",
         "home":"Home",
 
         "sobre-mi-titulo":"A little about me",
@@ -124,6 +125,7 @@
         "proyecto-cobol5":"DNI letter calculator",
         "proyecto-cobol6":"IBAN checker",
         "proyecto-cobol7":"Read and write to PS",
+        "proyecto-cobol8":"Equivalence of euros to pesetas",
 
         
         "mas-proyectos":"See more projects",

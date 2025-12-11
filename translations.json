@@ -50,6 +50,8 @@
         "proyecto-cobol6":"Comprobador de IBAN",
         "proyecto-cobol7":"Leer y grabar en PS",
         "proyecto-cobol8":"Equivalencia de euros a pesetas",
+        "proyecto-cobol9":"Calculadora de nóminas",
+
         "mas-proyectos":"Ver más proyectos",
         "mas-cobol":"Más proyectos COBOL próximamente",
        
@@ -126,6 +128,7 @@
         "proyecto-cobol6":"IBAN checker",
         "proyecto-cobol7":"Read and write to PS",
         "proyecto-cobol8":"Equivalence of euros to pesetas",
+        "proyecto-cobol9":"Salary calculator",
 
         
         "mas-proyectos":"See more projects",
